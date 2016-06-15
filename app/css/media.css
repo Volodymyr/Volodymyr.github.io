@@ -1,0 +1,44 @@
+@media screen and (max-width: 1280px) {
+  .header h2 {
+    font-size: 24pt;
+    margin-top: 50px; }
+  .header h4 {
+    font-size: 10pt; }
+  .header form input {
+    padding: 7px 4px; }
+  .header .header-submit {
+    padding: 10px 24px; } }
+
+@media screen and (max-width: 800px) {
+  .slider {
+    width: 70%; }
+  .slider img {
+    width: 250px; } }
+
+@media screen and (max-width: 600px) {
+  .header form input {
+    display: block;
+    margin: 5px auto; }
+  .Register-now {
+    font: 10pt 'Source Sans Pro', sans-serif;
+    color: #fff;
+    text-align: right;
+    background: url(../images/header-arrow.png) no-repeat 48% 1px;
+    padding: 16px 60% 162px 0; }
+  .brif-right-description,
+  .brif-left-description {
+    float: none;
+    margin: 0 auto; }
+  .brif-right img,
+  .brif-left img {
+    width: 50%;
+    float: none; }
+  .brif-right-img,
+  .brif-left-img {
+    text-align: center; }
+  .brif-right,
+  .brif-left {
+    padding-left: 0; }
+  .pricing table {
+    margin: 0 auto;
+    text-align: center; } }

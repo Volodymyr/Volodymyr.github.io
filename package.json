@@ -1,0 +1,28 @@
+{
+  "name": "landx",
+  "version": "1.0.0",
+  "description": "landing page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Volodymyr/landx.git"
+  },
+  "keywords": [
+    "hhaukq3121"
+  ],
+  "author": "Volodymyr",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Volodymyr/landx/issues"
+  },
+  "homepage": "https://github.com/Volodymyr/landx#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-sass": "^2.3.1"
+  }
+}
