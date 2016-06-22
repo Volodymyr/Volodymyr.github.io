@@ -23,5 +23,5 @@ function cheng(sp) {
   }else {
     var step = $(".slider").width() * sp.attr("class") + 30 ;
   }
-  $(".slider ul").animate({marginLeft: "-"+ step},500)
+  $(".slider ul").animate({marginLeft: "-"+ step},500);
 }

@@ -462,10 +462,173 @@ iframe {
 .product .nav .on {
   background: #0199e6;
 }
-
-
-
 /*end product*/
+
+/*start registration*/
+.registration {
+  background: url(../images/reg-bg.png);
+  text-align: center;
+  line-height: 100px;
+  padding: 50px 0;
+}
+
+.registration h2,
+.registration h4,
+.registration a {
+  color: white;
+}
+
+.registration h2 {
+  font: 20pt Raleway, sans-serif;
+}
+
+.registration h2 {
+  font: 35pt Raleway, sans-serif;
+}
+
+.registration a {
+  font: 16pt Raleway, sans-serif;
+  background: #008ed6;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+.registration a:hover {
+  background: #106894;
+}
+
+/*end registration*/
+
+/*start footer*/
+.footer {
+  background: #f7f8fa;
+  text-align: center;
+  padding: 50px 0;
+  line-height: 50px;
+}
+
+.footer span {
+  width: 26px;
+  height: 25px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.footer .f {
+  background: url(../images/footer-social.png);
+}
+
+.footer .tw {
+  background: url(../images/footer-social.png);
+  background-position: -26px 0;
+}
+
+.footer .p {
+  background: url(../images/footer-social.png);
+  background-position: -52px 0;
+}
+
+.footer .g {
+  background: url(../images/footer-social.png);
+  background-position: -78px 0;
+}
+
+.footer .inst {
+  background: url(../images/footer-social.png);
+  background-position: -104px 0;
+}
+
+.footer .in {
+  background: url(../images/footer-social.png);
+  background-position: -130px 0;
+}
+
+.footer .f:hover{
+  background-position: 0 -25px;
+}
+
+.footer .tw:hover{
+  background-position: -26px -25px;
+}
+
+.footer .p:hover{
+  background-position: -52px -25px;
+}
+
+.footer .g:hover{
+  background-position: -78px -25px;
+}
+
+.footer .inst:hover{
+  background-position: -103px -25px;
+}
+
+.footer .in:hover{
+  background-position: -130px -25px;
+}
+/*end footer*/
+
+.popap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.clouse {
+  width: 32px;
+  height: 32px;
+  top: 5px;
+  right: 10px;
+  background: url(../images/cloeses.png) no-repeat;
+  position: absolute;
+  cursor: pointer;
+}
+
+.popap form {
+  width: 250px;
+  background: white;
+  padding: 50px 50px 30px 50px;
+  border-radius: 5px;
+  margin: 10% auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.popap form input {
+  display: block;
+  width: 100%;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 1px solid #008ed6;
+  font: 20pt Raleway, sans-serif;
+  color: silver;
+  padding: 3px 15px;
+  box-sizing: border-box;
+}
+
+.popap input[type="text"]{
+  margin-top: 0;
+}
+
+.popap p:last-child input {
+  float: right;
+  border: none;
+  background: #008ed6;
+  color: white;
+  font: 16pt Raleway, sans-serif;
+  padding: 10px 0;
+  cursor: pointer;
+}
+
+.popap p:last-child input:hover {
+  background: #106894;
+}
 
 @import 'media';
 
