@@ -590,8 +590,7 @@ iframe {
   .brif-right,
   .brif-left {
     padding-left: 0; }
-  .pricing table {
-    margin: 0 auto;
+  .pricing {
     text-align: center; }
   .pricing .table-btn {
     padding: 4px 8px;
