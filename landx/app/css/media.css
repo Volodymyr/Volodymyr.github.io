@@ -16,6 +16,9 @@
     width: 250px; } }
 
 @media screen and (max-width: 600px) {
+  .message {
+    left: 5px;
+    width: 75%; }
   .header form input {
     display: block;
     margin: 5px auto; }
@@ -41,6 +44,8 @@
     padding-left: 0; }
   .pricing {
     text-align: center; }
+  .pricing table {
+    margin-top: 25px; }
   .pricing .table-btn {
     padding: 4px 8px;
     font-size: 10pt; }

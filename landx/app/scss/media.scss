@@ -28,6 +28,11 @@
 }
 
 @media screen and (max-width: 600px) {
+  .message {
+    left: 5px;
+    width: 75%;
+  }
+
   .header form input {
     display: block;
     margin: 5px auto;

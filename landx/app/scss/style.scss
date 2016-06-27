@@ -2,6 +2,20 @@
 
 $social: url(../images/social_sprite.png);
 
+.message {
+  width: 70%;
+  position: fixed;
+  top: 30px;
+  left: 15%;
+  border: 1px solid #0199e6;
+  background: rgba(0,0,255,0.3);
+  border-radius: 5px;
+  padding: 20px 20px;
+  color: #fff;
+  font: 15pt 'Source Sans Pro', sans-serif;
+  display: none;
+}
+
 .holder {
   max-width: 1145px;
   margin: 0 auto;

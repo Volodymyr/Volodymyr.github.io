@@ -1,4 +1,5 @@
 $(document).ready(function () {
+  //popap
   $("#popap-open").on('click', function(event) {
     event.preventDefault();
     $(".popap").show();
@@ -12,4 +13,24 @@ $(document).ready(function () {
     if(event.target.nodeName !="SECTION") return false;
     $(".popap").hide();
   });
+
+
+  //message
+  $(".header-submit").on('click', function() {
+    targetMessage();
+  });
+
+  $(".table-btn").on('click', function() {
+    targetMessage();
+  });
+
+  function targetMessage() {
+    $('.message').show("slow");
+    setTimeout(function(){
+      $('.message').hide("slow");;
+    }, 3000);
+  }
+
+  //kill form
+  $("form").submit(function(){return false;})
 });

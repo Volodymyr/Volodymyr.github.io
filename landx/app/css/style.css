@@ -40,6 +40,19 @@ blockquote:before, blockquote:after, q:before, q:after {
 blockquote, q {
   quotes: "" ""; }
 
+.message {
+  width: 70%;
+  position: fixed;
+  top: 30px;
+  left: 15%;
+  border: 1px solid #0199e6;
+  background: rgba(0, 0, 255, 0.3);
+  border-radius: 5px;
+  padding: 20px 20px;
+  color: #fff;
+  font: 15pt 'Source Sans Pro', sans-serif;
+  display: none; }
+
 .holder {
   max-width: 1145px;
   margin: 0 auto; }
@@ -567,6 +580,9 @@ iframe {
     width: 250px; } }
 
 @media screen and (max-width: 600px) {
+  .message {
+    left: 5px;
+    width: 75%; }
   .header form input {
     display: block;
     margin: 5px auto; }
@@ -592,6 +608,8 @@ iframe {
     padding-left: 0; }
   .pricing {
     text-align: center; }
+  .pricing table {
+    margin-top: 25px; }
   .pricing .table-btn {
     padding: 4px 8px;
     font-size: 10pt; }
