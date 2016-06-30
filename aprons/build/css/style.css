@@ -1,0 +1,535 @@
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td,
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code,
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+  vertical-align: baseline;
+  font-family: inherit;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  outline: 0;
+  padding: 0;
+  margin: 0;
+  border: 0; }
+
+/* remember to define focus styles! */
+:focus {
+  outline: 0; }
+
+body {
+  background: white;
+  line-height: 1;
+  color: black; }
+
+ol, ul {
+  list-style: none; }
+
+/* tables still need cellspacing="0" in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0; }
+
+caption, th, td {
+  font-weight: normal;
+  text-align: left; }
+
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+  content: ""; }
+
+blockquote, q {
+  quotes: "" ""; }
+
+@font-face {
+  font-family: MyriadPro-BoldSemiExt;
+  src: url(../fonts/MyriadPro-BoldSemiExt.otf); }
+
+@font-face {
+  font-family: MyriadPro-SemiExt;
+  src: url(../fonts/MyriadPro-SemiExt.otf); }
+
+@font-face {
+  font-family: MyriadPro-Semibold;
+  src: url(../fonts/MyriadPro-Semibold.otf); }
+
+.holder {
+  margin: 0 auto;
+  max-width: 960px; }
+
+@-ms-viewport {
+  width: device-width; }
+
+@-o-viewport {
+  width: device-width; }
+
+@viewport {
+  width: device-width; }
+
+.wrapper {
+  max-width: 1920px; }
+
+.submit-bg {
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  background: #baeb1f;
+  background: -webkit-linear-gradient(top, #baeb1f 0%, #8ec808 100%);
+  background: linear-gradient(to bottom, #baeb1f 0%, #8ec808 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#baeb1f', endColorstr='#8ec808',GradientType=0 ); }
+
+.submit-bg:hover {
+  background: #8fc800;
+  background: -webkit-linear-gradient(top, #8fc800 0%, #8fc800 99%);
+  background: linear-gradient(to bottom, #8fc800 0%, #8fc800 99%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#8fc800', endColorstr='#8fc800',GradientType=0 ); }
+
+.mobi-menu {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  min-height: 100%;
+  top: 0;
+  left: 0;
+  display: none;
+  z-index: 9999; }
+  .mobi-menu ul {
+    width: 302px;
+    margin: 22% auto;
+    background: #fff;
+    padding: 12px 20px 30px 20px;
+    text-align: right;
+    border-radius: 5px;
+    position: relative; }
+    .mobi-menu ul li {
+      padding: 10px 0; }
+    .mobi-menu ul li:hover {
+      background: green; }
+    .mobi-menu ul li a {
+      color: #000;
+      font: 38px MyriadPro-BoldSemiExt, arial;
+      text-decoration: none;
+      display: block; }
+  .mobi-menu ul:before {
+    content: "";
+    width: 30px;
+    height: 20px;
+    background: url(../images/menu-t.png) no-repeat;
+    top: -3%;
+    right: 10px;
+    position: absolute; }
+  .mobi-menu #red-cross {
+    width: 54px;
+    height: 54px;
+    background: url(../images/red-cross.png) no-repeat;
+    position: fixed;
+    top: 20px;
+    right: 50px; }
+
+/*start header*/
+.header {
+  background: url(../images/header-bg.png) repeat-x;
+  overflow: hidden; }
+  .header .holder {
+    padding: 27px 0 12px 0; }
+  .header h1 {
+    float: left;
+    margin-left: 10px; }
+  .header .contact {
+    float: right;
+    margin-right: 10px;
+    text-align: right; }
+    .header .contact .call-us {
+      font: 14px MyriadPro-BoldSemiExt, arial;
+      color: #c90000; }
+    .header .contact .phone {
+      font: 24.48px MyriadPro-SemiExt, arial;
+      padding-left: 32px;
+      color: #000;
+      background: url(../images/phone-icon.png) 0 no-repeat; }
+    .header .contact .working-hours {
+      font: 13px MyriadPro-SemiExt, arial;
+      color: #000;
+      background: url(../images/clock-icon.png) 103px no-repeat; }
+  .header form {
+    max-width: 465px;
+    margin: 4px auto; }
+    .header form p {
+      font: 11.7px MyriadPro-BoldSemiExt, arial; }
+    .header form [type="number"] {
+      font: 14px MyriadPro-SemiExt, arial;
+      color: #585858;
+      width: 272px;
+      height: 31px;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      padding-left: 10px;
+      margin-top: 10px; }
+    .header form [type="submit"] {
+      font: 12px MyriadPro-BoldSemiExt, arial;
+      color: #fff;
+      width: 170px;
+      height: 35px;
+      margin-left: 5px; }
+
+/*end header*/
+/*start nav*/
+.nav {
+  background: #c90000; }
+  .nav ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .nav ul li {
+      -webkit-box-flex: 1;
+          -ms-flex: 1;
+              flex: 1;
+      text-align: center;
+      border-left: 1px solid #db5757; }
+    .nav ul li:last-child {
+      border-right: 1px solid #db5757; }
+  .nav a {
+    font: 16px MyriadPro-BoldSemiExt, arial;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 13px;
+    cursor: pointer; }
+  .nav a:hover {
+    background: #A51A1A; }
+
+/*end nav*/
+/*start main*/
+.main {
+  position: relative;
+  padding-bottom: 30px;
+  background: -webkit-radial-gradient(center, ellipse cover, white 0%, rgba(255, 255, 255, 0.32) 100%);
+  background: -webkit-radial-gradient(center ellipse, white 0%, rgba(255, 255, 255, 0.32) 100%);
+  background: radial-gradient(ellipse at center, white 0%, rgba(255, 255, 255, 0.32) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#52ffffff',GradientType=1 ); }
+  .main .blueberry {
+    height: 480px; }
+  .main .blueberry .slides {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    height: 449px; }
+  .main .blueberry .slides li {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden; }
+  .main .blueberry .slides li img {
+    display: block;
+    width: 100%;
+    max-width: none; }
+  .main .blueberry .slides li.active {
+    display: block;
+    position: relative; }
+  .main .pager {
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 16px;
+    position: relative;
+    top: -11px;
+    width: 108px;
+    padding: 0 5px; }
+  .main .blueberry .pager li {
+    display: inline-block;
+    width: 18px;
+    height: 18px; }
+  .main .blueberry .pager li a,
+  .main .blueberry .pager li a span {
+    display: block;
+    height: 12px;
+    width: 12px; }
+  .main .blueberry .pager li a {
+    padding: 5px 0px;
+    border-radius: 50px; }
+  .main .blueberry .pager li a span {
+    overflow: hidden;
+    background: #cccccc;
+    text-indent: -9999px;
+    border-radius: 50px; }
+  .main .blueberry .pager li.active a span {
+    background: #fff;
+    border: 2px solid #d30000;
+    width: 10px;
+    height: 10px; }
+  .main .holder div {
+    float: left; }
+  .main .holder h1 {
+    font: 42px MyriadPro-BoldSemiExt, arial;
+    color: #c90000;
+    margin: 32px 0 5px 10px; }
+  .main .holder h3 {
+    font: 28px MyriadPro-BoldSemiExt, arial;
+    color: #000;
+    margin: -8px 0 0 10px; }
+  .main .main-holder {
+    position: relative;
+    top: -485px; }
+  .main .holder-form {
+    width: 280px;
+    background: #fff;
+    float: right;
+    padding: 10px;
+    margin: 21px 10px 0 0;
+    position: absolute;
+    right: 0;
+    box-shadow: 0 0 44px rgba(0, 0, 0, 0.5); }
+    .main .holder-form form {
+      border: 1px solid #e6e6e6;
+      padding: 13px 18px; }
+      .main .holder-form form h2 {
+        font: 22px MyriadPro-BoldSemiExt, arial;
+        color: #000; }
+      .main .holder-form form label {
+        font: 14px MyriadPro-SemiExt, arial;
+        color: #000;
+        padding: 11px 0 2px 0;
+        display: block; }
+      .main .holder-form form input:not([type="submit"]) {
+        width: 100%;
+        max-width: 230px;
+        background: #f7f7f7;
+        border: 1px solid #e6e6e6;
+        border-radius: 5px;
+        display: block;
+        font-size: 30px;
+        padding: 5px;
+        margin-bottom: 5px; }
+      .main .holder-form form [type="submit"] {
+        font: 16px MyriadPro-BoldSemiExt, arial;
+        width: 100%;
+        color: #fff;
+        padding: 18px 0 18px 0; }
+      .main .holder-form form .stock {
+        color: #fff;
+        width: 300px;
+        margin-bottom: 22px;
+        padding: 9px 1px 12px 19px;
+        left: -39px;
+        top: 8px;
+        position: relative;
+        background: #c90000; }
+        .main .holder-form form .stock h2 {
+          font: 28px MyriadPro-BoldSemiExt, arial;
+          color: #fff; }
+        .main .holder-form form .stock p {
+          font: 15px MyriadPro-SemiExt, arial; }
+        .main .holder-form form .stock span {
+          font: 15px MyriadPro-BoldSemiExt, arial; }
+      .main .holder-form form .stock:after {
+        content: "";
+        width: 10px;
+        height: 8px;
+        background: url(../images/stock-triangle-right.png) no-repeat;
+        top: 100%;
+        right: 0px;
+        position: absolute; }
+      .main .holder-form form .stock:before {
+        content: "";
+        width: 10px;
+        height: 8px;
+        background: url(../images/stock-triangle-left.png) no-repeat;
+        top: 100%;
+        left: 0px;
+        position: absolute; }
+
+/*end main*/
+/*start footer*/
+.footer {
+  position: relative;
+  top: -80px;
+  padding-bottom: 30px;
+  clear: both; }
+  .footer .holder {
+    padding: 10px;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+    max-width: 920px;
+    margin-top: 10px; }
+  .footer form {
+    border: 1px solid #e6e6e6;
+    padding: 18px 10px;
+    font: 20px MyriadPro-Semibold, arial; }
+    .footer form h1 {
+      font: 30px MyriadPro-BoldSemiExt, arial;
+      color: #000;
+      text-align: center;
+      margin-bottom: 28px; }
+    .footer form li {
+      float: left; }
+    .footer form input[type="text"] {
+      font: 20px MyriadPro-Semibold, arial;
+      width: 60px;
+      height: 44px;
+      background: #f7f7f7;
+      border: 1px solid #cccccc;
+      border-radius: 5px;
+      text-align: center;
+      margin-left: 6px; }
+    .footer form span {
+      margin: 0 9px 0 12px; }
+    .footer form #footer-range {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      width: 181px;
+      height: 5px; }
+    .footer form #footer-range::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: #c90000;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      outline: none; }
+    .footer form #footer-range::-moz-range-thumb {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: #c90000;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      outline: none; }
+    .footer form #footer-range::-ms-thumb {
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background-color: #c90000;
+      width: 20px;
+      height: 20px;
+      border-radius: 50px;
+      outline: none; }
+    .footer form p {
+      display: inline;
+      background: #f7f7f7;
+      padding: 10px;
+      margin-left: 20px; }
+      .footer form p span {
+        font: 18px MyriadPro-BoldSemiExt, arial;
+        margin: 1px; }
+    .footer form .loock {
+      font: 15px MyriadPro-BoldSemiExt, arial;
+      color: #fff;
+      padding: 16px 16px;
+      float: right; }
+    .footer form .modal-dialog {
+      position: fixed;
+      background: rgba(0, 0, 0, 0.7);
+      width: 100%;
+      min-height: 100%;
+      top: 0;
+      left: 0;
+      display: none; }
+    .footer form .popap-holder {
+      width: 302px;
+      margin: 12% auto;
+      background: #fff;
+      padding: 12px 20px 30px 20px; }
+      .footer form .popap-holder div {
+        position: relative;
+        height: 16px; }
+      .footer form .popap-holder #cross {
+        width: 16px;
+        height: 16px;
+        float: right;
+        cursor: pointer;
+        position: absolute;
+        right: -16px;
+        background: url(../images/cross-icon.png) no-repeat; }
+      .footer form .popap-holder h2 {
+        font: 20px MyriadPro-BoldSemiExt, arial; }
+      .footer form .popap-holder label {
+        font: 14px MyriadPro-SemiExt, arial;
+        margin-top: 20px;
+        display: block; }
+      .footer form .popap-holder input:not([type="submit"]) {
+        width: 98%;
+        height: 40px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        background: #f7f7f7;
+        margin: 0;
+        text-align: left;
+        font: 20px MyriadPro-Semibold, arial;
+        padding-left: 5px; }
+      .footer form .popap-holder .submit-bg {
+        width: 100%;
+        color: #fff;
+        font: 16px MyriadPro-BoldSemiExt, arial;
+        padding: 15px 0;
+        margin-top: 28px; }
+
+@media screen and (max-width: 640px) {
+  .header .holder {
+    padding-bottom: 10px;
+    padding-top: 10px; }
+  .header .mobile {
+    float: right;
+    width: 60px;
+    height: 54px;
+    background: url(../images/mobile.png);
+    margin-right: 10px; }
+  .header .contact {
+    float: none;
+    padding: 30px 10px;
+    clear: left;
+    overflow: hidden;
+    background: #fff;
+    margin-right: 0px;
+    margin-top: 70px; }
+    .header .contact p {
+      display: inline-block; }
+    .header .contact .working-hours {
+      display: none; }
+    .header .contact .call-us {
+      font-size: 20px;
+      float: left; }
+    .header .contact .phone {
+      float: right;
+      font-size: 20px; }
+  .header form {
+    background: #d30000;
+    padding: 10px 10px;
+    text-align: center; }
+    .header form p {
+      color: #fff;
+      font-size: 28px;
+      text-align: left; }
+    .header form input[type="number"] {
+      width: 42%; }
+    .header form input[type="submit"] {
+      width: 42%; }
+  .nav {
+    display: none; }
+  .main .holder-form {
+    top: 150px;
+    right: 5%; }
+  .main .blueberry .pager li {
+    height: 480px; }
+  .main .blueberry .pager li img {
+    height: 480px; }
+  .main .blueberry .slides {
+    height: 480px; }
+  .main .holder h1 {
+    font-size: 18px;
+    margin: 10px 0 5px 10px; }
+  .main .holder h3 {
+    font-size: 16px; }
+  .footer {
+    text-align: center;
+    top: 100px; }
+    .footer form h1 {
+      font-size: 40px; }
+    .footer form #length-apron {
+      display: block;
+      visibility: hidden;
+      height: 2px; }
+    .footer form .loock {
+      float: none;
+      display: block;
+      margin: 10px; }
+    .footer form p {
+      display: block;
+      margin: 10px; } }
+
+/*end footer*/

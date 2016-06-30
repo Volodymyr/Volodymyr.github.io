@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>front-end</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+		<div class="mobi-menu">
+			<div id="red-cross"></div>
+			<ul>
+				<li><a href="#">КАТАЛОГ</a></li>
+				<li><a href="#">ОТЗЫВЫ</a></li>
+				<li><a href="#">КОНСТРУКТОР</a></li>
+				<li><a href="#">НАШИ РАБОТЫ</a></li>
+				<li><a href="#">АКЦИИ</a></li>
+				<li><a href="#">ЦЕНА</a></li>
+			</ul>
+		</div>
+	<!--start header -->
+		<header class="header">
+			<section class="holder">
+				<h1><a href="#"><img src="images/logo.png" alt="logo"></a></h1>
+				<div class="mobile"></div>
+				<section class="contact">
+					<p class="call-us">Звоните нам:</p>
+					<p class="phone">8 (343) 999 99 99</p>
+					<p class="working-hours">пн-вс: 9:00-21:00</p>
+				</section>
+				<form>
+					<p>Расчитать фартук для кухни из закаленного стекла со скидкой прямо сейчас!</p>
+					<input type="number" placeholder="Длина фартука:" required>
+					<input type="submit" value="ЗАКАЗАТЬ РАСЧЕТ" class="submit-bg">
+				</form>
+			</section>
+		</header>
+	<!-- end header -->
+
+	<!-- start nav -->
+		<nav class="nav">
+			<ul class="holder">
+				<li><a href="#">КАТАЛОГ</a></li>
+				<li><a href="#">НАШИ РАБОТЫ</a></li>
+				<li><a href="#">АКЦИИ</a></li>
+				<li><a href="#">ЦЕНЫ</a></li>
+			</ul>
+		</nav>
+	<!--end nav-->
+
+	<!--start main-->
+		<main class="main">
+			<div class="blueberry">
+				<ul class="slides">
+					<li><img src="images/slider-img-1.png" /></li>
+					<li><img src="images/slider-img-2.png" /></li>
+					<li><img src="images/slider-img-3.png" /></li>
+					<li><img src="images/slider-img-4.png" /></li>
+					<li><img src="images/slider-img-5.png" /></li>
+				</ul>
+
+				<ul class="pager">
+					<li><a href="#"><span></span></a></li>
+					<li><a href="#"><span></span></a></li>
+					<li><a href="#"><span></span></a></li>
+					<li><a href="#"><span></span></a></li>
+					<li><a href="#"><span></span></a></li>
+				</ul>
+
+			</div>
+
+			<section class="holder main-holder">
+				<div>
+					<h1>Кухонные фартуки из стекла</h1>
+					<h3>теперь и световые</h3>
+				</div>
+				<section class="holder-form">
+					<form>
+						<h2>Оставьте заявку и мы вам перезвоним:</h2>
+						<label>Ваше имя:</label>
+						<input type="text">
+
+						<label>Телефон:</label>
+						<input type="tel">
+
+						<section class="stock">
+							<h2>Акция!</h2>
+							<p>Закажите бесплатный замер и получите подарок на выбор: <span>часы, подставка</span> для горячего или <span>плакат из стекла</span></p>
+						</section>
+
+						<input type="submit" value="Позвоните мне" class="submit-bg">
+					</form>
+				</section>
+			</section>
+		</main>
+	<!--end main-->
+
+	<!--start footer-->
+	<footer class="footer">
+		<section class="holder">
+			<form>
+				<h1>Рассчет стоимости фартука</h1>
+				<label for="">Длина:</label>
+				<input type="text" value="5м" readonly id="length-apron">
+				<span>5</span>
+				<input type="range" min="5" max="50" step="5" id="footer-range" name="fRange" value="5">
+				<span>50</span>
+				<p>от <span id="price-from">9500</span> <del><span>P</span></del> до <span id="price-to">15 420 </span><del><span>P</span></del></p>
+				<span class="loock submit-bg" id="show-popup">посмотреть варианты</span>
+
+				<section id="open-modal" class="modal-dialog">
+					<div class="popap-holder">
+						<div><span id="cross"></span></div>
+						<h2>Не нашли подходящего изображения? Закажите</h2>
+						<label>Ваше имя:</label>
+						<input type="text">
+						<label>Телефон:</label>
+						<input type="phone">
+						<input type="submit" class="submit-bg" value="ОТПРАВИТЬ ЗАЯВКУ">
+					</div>
+				</section>
+			</form>
+		</section>
+	</footer>
+	<!--end footer-->
+	</div>
+
+	<script src="scripts/range.js"></script>
+	<script src="scripts/popup.js"></script>
+	<script src="scripts/jquery.blueberry.js"></script>
+	<script src="scripts/menu.js"></script>
+
+</body>
+</html>
