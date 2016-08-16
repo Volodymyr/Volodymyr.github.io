@@ -1,0 +1,177 @@
+@media screen and (max-width: 1170px) {
+	.header {
+		.logo {
+			float: none;
+			margin: 20px auto;
+			width: 302px;
+		}
+
+		.menu {
+			float: none;
+			width: 100%;
+		}
+
+		.choose-version {
+			margin-bottom: 30px;
+		}
+
+		.search {
+			input[type="search"] {
+				padding-left: 38.5%;
+			}
+		}
+	}
+
+	.authorization {
+		text-align: center;
+
+		.logIn {
+			margin: 0 auto;
+			float: none;
+		}
+
+		h2 {
+			float: none;
+		}
+
+		form {
+			float: none;
+			width: 384px;
+			margin: 0 auto;
+		}
+	}
+
+	.footer {
+		.logo {
+			float: none;
+			margin: 0 auto;
+			width: 302px;
+		}
+
+		.footer-nav {
+			float: none;
+			width: 100%;
+			margin: 0;
+		}
+
+		.message {
+			width: 40%;
+		}
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.header {
+
+		.nav {
+
+			ul {
+				display: block;
+			}
+
+			li {
+				display: block;
+				margin-top: 20px;
+			}
+
+			a {
+				display: block;
+			}
+		}
+	}
+
+	.footer {
+		.footer-nav {
+			ul {
+				display: block;
+			}
+
+			li {
+				display: block;
+				margin-top: 20px;
+			}
+
+			a {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.header {
+
+		.info {
+			float: none;
+			margin: 0 auto;
+			text-align: center;
+			padding-left: 0;
+		}
+
+		.choose-version {
+			float: none;
+			margin: 10px auto;
+			width: 128px;
+			padding-top: 20px;
+		}
+
+		.search {
+			input[type="search"] {
+				width: 92%;
+			}
+		}
+	}
+
+	.footer {
+		.footer-contact {
+			float: none;
+			text-align: center;
+		}
+
+		.message {
+			float: none;
+			text-align: center;
+			width: 100%;
+		}
+
+		.second-footer-nav {
+				float: none;
+				display: block;
+				margin: 0 auto;
+				text-align: center;
+
+			li {
+				display: block;
+				margin-top: 20px;
+				float: none;
+				margin-left: 0;
+			}
+
+			a {
+				display: block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.header {
+
+		.info {
+			span {
+				display: block;
+				margin: 10px 0;
+			}
+
+			a {
+				margin: 0;
+			}
+		}
+
+		.search {
+			input[type="search"] {
+				width: 89%;
+			}
+		}
+	}
+}
