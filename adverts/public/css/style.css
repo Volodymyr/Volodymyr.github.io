@@ -148,7 +148,7 @@ table {
     .header .search input[type="search"] {
       border: none;
       background: #f0f0f0;
-      width: 94.8%;
+      width: 93.8%;
       font: 18px MyriadPro-Cond;
       color: #d1d1d1;
       padding-left: 27.5%;
@@ -213,12 +213,12 @@ table {
       cursor: pointer; }
     .authorization form:after {
       content: '';
-      width: 14px;
-      height: 9px;
+      width: 24px;
+      height: 38px;
       background: url(../images/arrow.png) no-repeat;
       position: absolute;
-      top: 13px;
-      right: 5px; }
+      top: 0;
+      right: 0; }
 
 .important {
   background: #f0f0f0;
@@ -296,6 +296,8 @@ table {
       margin-left: 27px; }
       .footer .second-footer-nav li:first-child {
         margin-left: 0; }
+      .footer .second-footer-nav li:hover {
+        color: #7b102a; }
     .footer .second-footer-nav a {
       font: 24px Myriad-Pro-Semibold-Condensed;
       color: #b00931;

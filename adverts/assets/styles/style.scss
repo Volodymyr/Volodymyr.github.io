@@ -137,7 +137,7 @@
 		input[type="search"] {
 			border: none;
 			background: $first-bg-color;
-			width: 94.8%;
+			width: 93.8%;
 			font: 18px MyriadPro-Cond;
 			color: #d1d1d1;
 			padding-left: 27.5%;
@@ -230,12 +230,12 @@
 
 		&:after {
 				content: '';
-				width: 14px;
-				height: 9px;
+				width: 24px;
+				height: 38px;
 				background: url(../images/arrow.png) no-repeat;
 				position: absolute;
-				top: 13px;
-				right: 5px;
+				top: 0;
+				right: 0;
 			}
 	}
 }
@@ -356,8 +356,12 @@
 			margin-left: 27px;
 
 			&:first-child {
-			margin-left: 0;
-		}
+				margin-left: 0;
+			}
+
+			&:hover {
+				color: $links-header-hover;
+			}
 		}
 
 		a {
