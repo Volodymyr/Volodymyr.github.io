@@ -1,0 +1,40 @@
+//_media.sass
+
+@media only screen and (min-width: 3000px)
+  body
+    font-size: 160%
+
+  .header
+    background: $block-bg-odd url(../images/header-bg-left.png) no-repeat 0 0/15% auto, url(../images/header-bg-right.png) no-repeat 100% 0/20% auto
+
+    h2,
+    p
+      margin-bottom: 20px
+
+  .beliefs-description
+    width: 1345px
+
+@media only screen and (min-width: 2000px) and (max-width: 3000px)
+  body
+    font-size: 120%
+
+  .header
+    background: $block-bg-odd url(../images/header-bg-left.png) no-repeat 0 0/20% auto, url(../images/header-bg-right.png) no-repeat 100% 0/30% auto
+
+@media only screen and (max-width: 1600px)
+  .header
+    background: $block-bg-odd url(../images/header-bg-left.png) no-repeat 0 0/20% auto, url(../images/header-bg-right.png) no-repeat 100% 0/30% auto
+
+  .nav
+    width: 35.813%
+
+@media only screen and (max-width: 1281px)
+  .nav
+    width: 38.813%
+
+  .header
+    h2
+      margin-top: 200px
+
+  .btn-down
+    margin-top: 182px
