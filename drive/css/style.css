@@ -1,0 +1,389 @@
+/* reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* end reset css */
+
+/* fonts */
+@font-face {
+	font-family: UbuntuMono-Bold;
+	src: url(../fonts/UbuntuMono-Bold.ttf);
+}
+
+@font-face {
+	font-family: UbuntuCondensed-Regular;
+	src: url(../fonts/UbuntuCondensed-Regular.ttf);
+}
+
+@font-face {
+	font-family: UbuntuMono-Regular;
+	src: url(../fonts/UbuntuMono-Regular.ttf);
+}
+/* end fonts */
+
+/* common */
+.blue-txt {
+	color: #018abc;
+}
+/* end common */
+
+/* nav */
+.navbar {
+	padding-top: 12px;
+}
+
+@media (min-width: 768px) {
+	.navbar .container {
+		width: 750px;
+	}
+	}
+@media (min-width: 992px) {
+	.navbar .container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.navbar .container {
+		width: 1230px;
+	}
+}
+
+.nav {
+	width: 100%;
+	display: table;
+}
+
+.nav li {
+	display: table-cell;
+	float: none;
+	vertical-align: top;
+	padding-top: 13px;
+	text-align: center;
+}
+
+.nav-li {
+	width: 15.268%;
+}
+
+.nav .logo {
+	padding-top: 0;
+}
+
+.nav a {
+	font-family: UbuntuMono-Bold;
+	font-size: 20px;
+	color: #000105;
+	cursor: pointer;
+	text-align: center;
+}
+
+.navbar .nav a:hover,
+.navbar .nav a:focus {
+	color: #018abc;
+	background: url(../images/nav-li-bg.png) no-repeat center 70%;
+}
+
+.navbar .logo a:hover,
+.navbar .logo a:focus {
+	background: none;
+}
+
+
+.navbar-toggle {
+	background: #000105;
+	margin-top: 40px;
+}
+
+.navbar-toggle .icon-bar {
+	background: #fff;
+}
+
+.navbar-brand {
+	display: none;
+}
+/* end nav */
+
+/* slider */
+.slider {
+	height: 1000px;
+	width: 100%;
+	padding-top: 189px;
+	background: url(../images/spray-bt.png) no-repeat bottom center,
+				url(../images/slider-bg.png) no-repeat top center;
+}
+
+@media (min-width: 768px) {
+	.slider .container {
+		width: 750px;
+	}
+	}
+@media (min-width: 992px) {
+	.slider .container {
+		width: 970px;
+	}
+}
+@media (min-width: 1200px) {
+	.slider .container {
+		width: 1250px;
+	}
+}
+
+.carousel {
+	max-width: 603px;
+	padding-top: 39px;
+	padding-bottom: 145px;
+	padding-left: 15px;
+	background: url(../images/slider-item-bg.png) no-repeat;
+}
+
+.carousel-inner {
+	max-width: 100%;
+	text-align: center;
+}
+
+.carousel-inner h2,
+.slider-size {
+	font-family: UbuntuMono-Bold;
+	font-size: 70px;
+	color: #fff;
+	line-height: 70px;
+}
+
+.slider-size {
+	color: #fdfa2a;
+}
+
+.carousel-control {
+	opacity: 1;
+}
+
+.carousel-control:hover {
+	color: #fdfa2a;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+	background-image: none;
+}
+
+.carousel-indicators li {
+	width: 12px;
+	height: 12px;
+	border: none;
+	background: #80c5de;
+	vertical-align: top;
+}
+
+.carousel-indicators .active {
+	width: 15px;
+	height: 15px;
+	border: none;
+	background: #fdfa2a;
+}
+
+.carousel-indicators {
+	top: 84.3%;
+	left: 49%;
+}
+
+.carousel-control .glyphicon {
+	font-family: monospace;
+	font-size: 70px;
+	opacity: 1;
+}
+
+.carousel-control .glyphicon-chevron-right,
+.carousel-control .glyphicon-chevron-left {
+	top: 37.5%;
+	height: 40px;
+}
+
+.carousel-control .glyphicon-chevron-right {
+	margin-right: -27px;
+	background: url(../images/arrow-right.png) no-repeat;
+}
+
+.carousel-control .glyphicon-chevron-right:hover {
+	background: url(../images/arrow-hover-right.png) no-repeat;
+}
+
+.carousel-control .glyphicon-chevron-left {
+	margin-left: -37px;
+	background: url(../images/arrow-left.png) no-repeat;
+}
+
+.carousel-control .glyphicon-chevron-left:hover {
+	background: url(../images/arrow-hover-left.png) no-repeat;
+}
+
+.yellow-btn {
+	width: 235px;
+	height: 75px;
+	font-size: 19px;
+	font-family: UbuntuMono-Bold;
+	color: #000105;
+	margin-left: 14.3%;
+	line-height: 72px;
+	text-align: center;
+	background: url(../images/button.png) no-repeat;
+	cursor: pointer;
+}
+
+.yellow-btn:active {
+	background: url(../images/button-active.png) no-repeat;
+}
+/* end slider */
+
+/* drive-3 */
+.drive-3 {
+	padding-top: 19px;
+	padding-bottom: 20px;
+}
+
+.drive-3 .container {
+	padding-right: 2px;
+	padding-left: 2px;
+}
+
+.drive-3 h3 {
+	font-family: UbuntuCondensed-Regular;
+	font-size: 42px;
+	color: #000105;
+	text-align: center;
+	line-height: 48px;
+	background: url(../images/drive-3-h3.png) no-repeat center 80%;
+}
+
+.drive-items {
+	text-align: center;
+	display: table;
+	width: 100%;
+	margin-top: 49px;
+}
+
+.drive-items figure {
+	display: table-cell;
+	color: 333333;
+	cursor: pointer;
+}
+
+.drive-items figcaption {
+	font-size: 24px;
+	font-family: UbuntuMono-Bold;
+	margin-top: 38px;
+}
+
+.drive-items figure:hover {
+	color: #018abc;
+}
+/* end drive-3 */
+
+/* media */
+@media (max-width: 992px) {
+	.navbar-fixed-top .navbar-collapse {
+		max-height: 365px;
+	}
+
+	.nav {
+		display: block;
+	}
+
+	.nav li {
+		display: block;
+	}
+
+	.nav-li {
+		width: 100%;
+		padding-top: 0;
+	}
+
+	.nav .logo {
+		display: none;
+	}
+
+	.navbar-brand {
+		display: block;
+	}
+
+	.navbar-nav>li>a {
+		padding: 0;
+	}
+
+	.drive-items {
+		display: block;
+	}
+
+	.drive-items figure {
+		display: block;
+	}
+}
+
+@media (max-width: 768px) {
+	.carousel {
+		max-width: 100%;
+		background-size: 100% 100%;
+	}
+
+	.carousel-inner h2,
+	.slider-size {
+		font-family: UbuntuMono-Bold;
+		font-size: 50px;
+		color: #fff;
+		line-height: 50px;
+	}
+
+	.yellow-btn {
+		margin: 0 auto;
+	}
+}
+
+@media (max-width: 600px) {
+	.carousel-inner h2,
+	.slider-size {
+		font-family: UbuntuMono-Bold;
+		font-size: 40px;
+		color: #fff;
+		line-height: 40px;
+	}
+}
+/* end media */
