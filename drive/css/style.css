@@ -59,11 +59,28 @@ table {
 	font-family: UbuntuMono-Regular;
 	src: url(../fonts/UbuntuMono-Regular.ttf);
 }
+
+@font-face {
+	font-family: Ubuntu-Regular;
+	src: url(../fonts/Ubuntu-Regular.ttf);
+}
+
+@font-face {
+	font-family: Ubuntu-Bold;
+	src: url(../fonts/Ubuntu-Bold.ttf);
+}
 /* end fonts */
 
 /* common */
 .blue-txt {
 	color: #018abc;
+}
+
+h3 {
+	font-family: UbuntuCondensed-Regular;
+	font-size: 42px;
+	color: #000105;
+	text-align: center;
 }
 /* end common */
 
@@ -256,21 +273,41 @@ table {
 	background: url(../images/arrow-hover-left.png) no-repeat;
 }
 
+.btn-wrapper {
+	position: relative;
+	margin-left: 10.2%;
+	max-width: 367px;
+}
+
 .yellow-btn {
 	width: 235px;
 	height: 75px;
 	font-size: 19px;
 	font-family: UbuntuMono-Bold;
 	color: #000105;
-	margin-left: 14.3%;
+	margin-left: 16.8%;
 	line-height: 72px;
 	text-align: center;
 	background: url(../images/button.png) no-repeat;
 	cursor: pointer;
+	position: relative;
+	z-index: 5;
 }
 
 .yellow-btn:active {
 	background: url(../images/button-active.png) no-repeat;
+}
+
+.yellow-btn-bg {
+	content: ' ';
+	width: 367px;
+	height: 142px;
+	display: block;
+	position: absolute;
+	top: -29px;
+	left: 27px;
+	z-index: 1;
+	background: url(../images/button-bg.png) no-repeat;
 }
 /* end slider */
 
@@ -286,10 +323,6 @@ table {
 }
 
 .drive-3 h3 {
-	font-family: UbuntuCondensed-Regular;
-	font-size: 42px;
-	color: #000105;
-	text-align: center;
 	line-height: 48px;
 	background: url(../images/drive-3-h3.png) no-repeat center 80%;
 }
@@ -318,7 +351,300 @@ table {
 }
 /* end drive-3 */
 
+/* watercraft */
+.watercraft {
+	padding-top: 75px;
+	position: relative;
+	background: url(../images/watercraft-bg.png) no-repeat center 41%;
+}
+.watercraft h3 {
+	margin-bottom: 150px;
+	background: url(../images/drive-3-h3.png) no-repeat center;
+}
+
+.watercraft-slider {
+	text-align: center;
+}
+
+.w-name {
+	font-family: UbuntuMono-Regular;
+	font-size: 18px;
+	color: #333;
+}
+
+.w-model {
+	font-family: UbuntuMono-Bold;
+	font-size: 24px;
+	color: #018abc;
+}
+
+.w-volume {
+	font-family: Ubuntu-Regular;
+	font-size: 18px;
+	color: #333;
+}
+
+.w-size {
+	font-family: Ubuntu-Bold;
+	font-size: 24px;
+	color: #fdfa2a;
+	padding-top: 8px;
+}
+
+.w-size span {
+	padding: 8px 20px;
+	background: #00bfdc;
+}
+
+.watercraft-slider figcaption{
+	padding-top: 29px;
+}
+
+.watercraft-slider p {
+	padding-bottom: 15px;
+}
+
+.slick-slide img {
+	margin: 0 auto;
+}
+
+.watercraft-slider {
+	width: 1564px;
+	margin: 0 auto;
+}
+
+.slick-arrow {
+	opacity: 0;
+}
+
+.watercraft-slider figure {
+	cursor: pointer;
+}
+
+.watercraft:before {
+	content: " ";
+	display: block;
+	height: 100%;
+	width: 451px;
+	position: absolute;
+	top: 0;
+	left: 80px;
+	z-index: 9;
+	background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.watercraft:after {
+	content: " ";
+	display: block;
+	height: 100%;
+	width: 451px;
+	position: absolute;
+	top: 0;
+	right: 80px;
+	z-index: 9;
+	background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.w-btn-wrapper {
+	position: relative;
+	width: 376px;
+	margin: 70px auto;
+}
+
+.w-btn-wrapper .yellow-btn {
+	background: url(../images/w-btn.png) no-repeat;
+	margin: 0 auto;
+}
+
+.w-btn-wrapper .yellow-btn:active {
+	background: url(../images/w-btn-hover.png) no-repeat;
+}
+
+.w-btn-wrapper .yellow-btn-bg {
+	background: url(../images/btn-color-bg.png) no-repeat;
+	left: 63px;
+}
+/* end watercraft */
+
+/* rental-conditions */
+.rental-conditions {
+	padding-top: 65px;
+	background: url(../images/rental-bg-left.png) no-repeat left 30%,
+				url(../images/rental-bg-right.png) no-repeat right 40%;
+}
+
+.rental-conditions h3 {
+	margin-bottom: 63px;
+	background: url(../images/drive-3-h3.png) no-repeat center;
+}
+
+.rental {
+	font-size: 36px;
+	font-family: UbuntuCondensed-Regular;
+	color: #000105;
+	height: 533px;
+	background: url(../images/rental-bg.png) no-repeat center;
+}
+
+.rental ol {
+	width: 86%;
+	float: right;
+	padding-left: 40px;
+}
+
+.rental li {
+	margin-bottom: 26px;
+}
+
+.rental-conditions-left ol {
+	background: url(../images/r-num.png) no-repeat left 4px;
+}
+
+.rental-conditions-right ol {
+	background: url(../images/r-num-right.png) no-repeat left 4px;
+}
+/* end rental-conditions */
+
+/* sea */
+.sea {
+	padding-top: 65px;
+	padding-bottom: 40px;
+}
+
+.sea h3 {
+	margin-bottom: 75px;
+	background: url(../images/drive-3-h3.png) no-repeat center;
+}
+
+.wrapper-s {
+	background: url(../images/sea-s/left.png) no-repeat left -27px,
+				url(../images/sea-s/right.png) no-repeat right -24px;
+}
+
+.sea-slider {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.sea-slider .slick-arrow {
+	opacity: 1;
+}
+
+.slick-prev:before,
+.slick-next:before {
+	color: red !important;
+	width: 45px;
+	height: 48px;
+	display: none;
+}
+
+.slick-prev:before {
+	content: " ";
+	background: url(../images/sea-s/sea-left.png) no-repeat;
+}
+
+.slick-next:before {
+	content: " ";
+	background: url(../images/sea-s/sea-right.png) no-repeat;
+}
+
+.slick-dots {
+	top: -50px;
+}
+
+.slick-dots li button:before {
+	font-size: 30px;
+	color: #2a77ad;
+}
+
+.slick-dots li.slick-active button:before {
+	font-size: 40px;
+	color: #fedb3f;
+}
+
+.not-skated {
+	width: 1200px;
+	margin: 0 auto;
+	padding-top: 65px;
+}
+
+.not-skated h3 {
+	font-size: 70px;
+	text-align: left;
+	color: #018abc;
+	font-family: UbuntuMono-Bold;
+	background: url(../images/sea-s-h3.png) no-repeat center 100%;
+}
+
+.s-description {
+	float: left;
+	max-width: 310px;
+}
+
+.skated-slider {
+	float: right;
+}
+
+.skated-slider .carousel {
+	background: none;
+}
+/* end sea */
+
+
+/*body {
+	width: 1920px;
+}*/
 /* media */
+@media (max-width: 1686px) {
+	.watercraft-slider {
+		width: 1200px;
+	}
+
+	.watercraft:before {
+		width: 487px;
+	}
+
+	.watercraft:after {
+		width: 487px;
+	}
+
+	.wrapper-s {
+		background: none;
+	}
+}
+
+@media (max-width: 1282px) {
+	.watercraft-slider {
+		width: 1000px;
+	}
+
+	.watercraft:before {
+		display: none;
+	}
+
+	.watercraft:after {
+		display: none;
+	}
+}
+
+@media (max-width: 1260px) {
+	.rental-conditions {
+		background: none;
+	}
+}
+
+@media (max-width: 1202px) {
+	.rental ol {
+		width: 70%;
+	}
+}
+
+@media (max-width: 1005px) {
+	.watercraft-slider {
+		width: 100%;
+	}
+}
+
 @media (max-width: 992px) {
 	.navbar-fixed-top .navbar-collapse {
 		max-height: 365px;
@@ -384,6 +710,16 @@ table {
 		font-size: 40px;
 		color: #fff;
 		line-height: 40px;
+	}
+
+	.rental ol {
+		width: 100%;
+	}
+}
+
+@media (max-width: 500px) {
+	.yellow-btn-bg {
+		width: 250px;
 	}
 }
 /* end media */
