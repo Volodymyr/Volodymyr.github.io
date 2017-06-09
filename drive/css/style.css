@@ -421,26 +421,26 @@ h3 {
 	cursor: pointer;
 }
 
-.watercraft:before {
+.watercraft-slider:before {
 	content: " ";
 	display: block;
 	height: 100%;
-	width: 451px;
+	width: 315px;
 	position: absolute;
 	top: 0;
-	left: 80px;
+	left: 0;
 	z-index: 9;
 	background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
-.watercraft:after {
+.watercraft-slider:after {
 	content: " ";
 	display: block;
 	height: 100%;
-	width: 451px;
+	width: 315px;
 	position: absolute;
 	top: 0;
-	right: 80px;
+	right: 0px;
 	z-index: 9;
 	background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
@@ -508,7 +508,34 @@ h3 {
 /* sea */
 .sea {
 	padding-top: 65px;
-	padding-bottom: 40px;
+	padding-bottom: 30px;
+	overflow: hidden;
+	position: relative;
+	background: url(../images/sea-bg-a.png) no-repeat bottom center;
+}
+
+.sea:before {
+	content: " ";
+	display: block;
+	height: 100%;
+	width: 315px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 9;
+	background: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+}
+
+.sea:after {
+	content: " ";
+	display: block;
+	height: 100%;
+	width: 315px;
+	position: absolute;
+	top: 0;
+	right: 0px;
+	z-index: 9;
+	background: linear-gradient(to left, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
 }
 
 .sea h3 {
@@ -516,13 +543,8 @@ h3 {
 	background: url(../images/drive-3-h3.png) no-repeat center;
 }
 
-.wrapper-s {
-	background: url(../images/sea-s/left.png) no-repeat left -27px,
-				url(../images/sea-s/right.png) no-repeat right -24px;
-}
-
 .sea-slider {
-	max-width: 1200px;
+	max-width: 100%;
 	margin: 0 auto;
 }
 
@@ -563,7 +585,9 @@ h3 {
 }
 
 .not-skated {
-	width: 1200px;
+	max-width: 1220px;
+	padding-left: 10px;
+	padding-right: 10px;
 	margin: 0 auto;
 	padding-top: 65px;
 }
@@ -573,39 +597,437 @@ h3 {
 	text-align: left;
 	color: #018abc;
 	font-family: UbuntuMono-Bold;
-	background: url(../images/sea-s-h3.png) no-repeat center 100%;
+	margin-bottom: 35px;
+	background: url(../images/sea-s-h3.png) no-repeat left 100%;
 }
 
 .s-description {
 	float: left;
-	max-width: 310px;
+	max-width: 315px;
+	padding-top: 55px;
 }
 
 .skated-slider {
 	float: right;
+	width: 70%;
 }
 
 .skated-slider .carousel {
 	background: none;
 }
+
+.s-size,
+.s-data {
+	font-size: 24px;
+	font-family: UbuntuCondensed-Regular;
+	margin-bottom: 25px;
+}
+
+.naw {
+	color: #018abc;
+	font-family: UbuntuMono-Bold;
+	font-size: 24px;
+	margin-bottom: 75px;
+}
+
+.sea .carousel-inner {
+	max-width: none;
+	border: 20px solid #caf1f7;
+	background: linear-gradient(#caf1f7, #b5eaf2);
+	box-shadow: 10px 10px 0px #9edae3;
+	transform: rotateY(-1deg);
+}
+
+.ytp-large-play-button {
+	background: #00bfdc;
+}
+
+.sea .carousel {
+	max-width: none;
+	-webkit-perspective: 150px;
+	perspective: 150px;
+}
+
+.video-slider iframe {
+	width: 100%;
+	height: 520px;
+}
 /* end sea */
 
+/* certificate */
+.certificate {
+	padding-bottom: 40px;
+}
 
-/*body {
-	width: 1920px;
-}*/
+.certificate-d {
+	text-align: center;
+	font-size: 24px;
+	font-family: UbuntuCondensed-Regular;
+	color: #333;
+	margin-top: 30px;
+	margin-bottom: 55px;
+}
+
+.certificate-f {
+	width: 1104px;
+	margin: 0 auto;
+	background: url(../images/certificate-bg.png) no-repeat;
+	background-size: 100% 506px;
+	overflow: hidden;
+	height: 506px;
+}
+
+.certificate-f-left {
+	float: left;
+	width: 50%;
+	text-align: center;
+}
+
+.certificate-f-left img {
+	margin-top: 10%;
+}
+
+.certificate-f-right {
+	float: right;
+	width: 50%;
+	padding-top: 45px;
+}
+
+.certificate-f-right h4 {
+	font-family: UbuntuMono-Bold;
+	font-size: 42px;
+	color: #018abc;
+	margin-bottom: 30px;
+}
+
+.certificate-f-right select {
+	font-size: 16px;
+	color: #808080;
+	font-family: UbuntuCondensed-Regular;
+	padding: 20px;
+	width: 80%;
+	border-radius: 10px;
+	border: 1px solid #d2d2d2;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	appearance: none!important;
+	background: #fff url(../images/select-btn.png) no-repeat right;
+	cursor: pointer;
+}
+
+.certificate-size {
+	font-size: 60px;
+	color: #018abc;
+	font-family: Ubuntu-Bold;
+	margin-top: 30px;
+}
+
+.certificate-f-right h5 {
+	color: #333333;
+	font-size: 24px;
+	font-family: UbuntuMono-Bold;
+	margin-top: 25px;
+	margin-bottom: 20px;
+}
+
+.instr {
+	color: #4d4d4d;
+	font-size: 16px;
+	font-family: Ubuntu-Regular;
+	line-height: 20px;
+}
+
+.certificate-f-right .w-btn-wrapper {
+	width: 240px;
+	margin: 20px 0 0 0;
+}
+
+.certificate-f-right .yellow-btn-bg {
+	left: -48px;
+	top: -34px;
+}
+/* end certificate */
+
+/* gallery */
+.gallery {
+	padding-top: 60px;
+}
+
+.grid-item {
+	width: 20%;
+}
+
+.g-logo {
+	height: 392px;
+}
+
+.grid-item img {
+	width: 100%;
+	float: left;
+}
+
+.gallery {
+	text-align: center;
+}
+
+.gallery p {
+	display: none;
+	position: absolute;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	color: #fff;
+	font-size: 20px;
+	background: rgba(0, 0, 0, .8);
+	padding-top: 20%;
+}
+
+.gallery .grid-item:hover p{
+	display: block;
+}
+/* end gallery */
+
+/* reviews */
+
+.reviews h3 {
+	background: url(../images/sea-s-h3.png) no-repeat center 100%;
+}
+
+#reviews {
+	background: none;
+}
+
+.reviews-slider figcaption{
+	text-align: center;
+}
+
+.r-name {
+	color: #018abc;
+	font-size: 20px;
+	font-family: UbuntuMono-Bold;
+	margin: 35px 0 25px 0;
+}
+
+.r-description {
+	color: #231f20;
+	font-size: 18px;
+	font-family: UbuntuCondensed-Regular;
+	width: 82%;
+	line-height: 25px;
+	margin: 0 auto;
+}
+
+.reviews-slider hr {
+	width: 90px;
+	margin: 18px auto 20px auto;
+	border: none;
+	height: 2px;
+	background: #e6e6e6;
+}
+
+.r-data {
+	color: #018abc;
+	font-size: 14px;
+	font-family: Ubuntu-Bold;
+}
+
+.reviews .btn-wrapper {
+	width: 240px;
+	margin: 100px auto 50px auto;
+}
+
+.reviews .yellow-btn-bg {
+	background: url(../images/reviews-btn.png) no-repeat;
+	left: -33px;
+	top: -34px;
+}
+
+/* end reviews */
+
+/* gift */
+.gift {
+	background: url(../images/gift-bg.png) no-repeat top center;
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 150px;
+	overflow: hidden;
+}
+
+.gift h5 {
+	color: #fff;
+	font-size: 42px;
+	font-family: UbuntuCondensed-Regular;
+	margin-bottom: 50px;
+	background: url(../images/h4-bg-b.png) no-repeat center 100%;
+}
+
+.gift h4 {
+	color: #fff;
+	font-size: 70px;
+	font-family: Ubuntu-Bold;
+	margin-bottom: 50px;
+}
+
+.gift input {
+	font-size: 16px;
+	font-family: Ubuntu-Regular;
+	color: #808080;
+	padding: 20px 25px;
+	border: 1px solid #d8d8d8;
+	border-radius: 10px;
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+.gift .container {
+	padding: 0;
+}
+
+.gift .gift-submit {
+	background: none;
+	border: none;
+	color: #000105;
+	font-size: 18px;
+	font-family: UbuntuMono-Bold;
+	height: 70px;
+	position: relative;
+	z-index: 5;
+	padding-right: 0;
+	text-align: right;
+	padding-top: 14px;
+}
+
+.wrapper-sub {
+	position: relative;
+}
+
+.wrapper-sub:after {
+	content: ' ';
+	width: 365px;
+	height: 131px;
+	position: absolute;
+	left: -5%;
+	top: -48%;
+	z-index: 1;
+	background: url(../images/submit-btn.png) no-repeat;
+}
+/* end gift */
+
+/* footer */
+.footer {
+	padding: 75px 0 20px 0;
+	position: relative;
+}
+
+.map {
+	width: 100%;
+	height: 506px;
+	background: #a3ccff url(../images/map.png) no-repeat;
+}
+
+.to-top {
+	width: 51px;
+	height: 55px;
+	display: block;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+	background: url(../images/btn-top.png) no-repeat;
+}
+
+.copyright {
+	text-align: center;
+	font-family: Ubuntu-Regular;
+	font-size: 14px;
+	color: #333333;
+	margin-top: 45px;
+}
+
+.map-w {
+	font-size: 20px;
+	color: #231f20;
+	font-family: UbuntuCondensed-Regular;
+	padding-top: 60px;
+	position: relative;
+}
+
+.map-w:before {
+	content: " ";
+	display: block;
+	width: 422px;
+	height: 601px;
+	position: absolute;
+	top: -52px;
+	left: -4px;
+	background: url(../images/footer-bg.png) no-repeat;
+}
+
+.map-w p {
+	padding-left: 100px;
+	position: relative;
+	margin-bottom: 30px;
+	line-height: 26px;
+}
+
+.footer-a {
+	font-size: 20px;
+	color: #231f20;
+	font-family: UbuntuCondensed-Regular;
+}
+
+.footer-a:before {
+	content: ' ';
+	display: block;
+	width: 29px;
+	height: 42px;
+	position: absolute;
+	left: 12%;
+	background: url(../images/footer-a.png) no-repeat;
+}
+
+.clock:before {
+	content: ' ';
+	display: block;
+	width: 29px;
+	height: 42px;
+	position: absolute;
+	left: 12%;
+	background: url(../images/clock.png) no-repeat;
+}
+
+.phone:before {
+	content: ' ';
+	display: block;
+	width: 29px;
+	height: 42px;
+	position: absolute;
+	left: 12%;
+	background: url(../images/phone.png) no-repeat;
+}
+
+.map-w ul {
+	list-style: disc;
+	padding-left: 122px;
+	padding-bottom: 30px;
+	z-index: 2;
+	position: relative;
+}
+
+.map-w li {
+	font-size: 20px;
+	font-family: Ubuntu-Bold;
+	color: #018abc;
+}
+/* end footer */
+
 /* media */
 @media (max-width: 1686px) {
 	.watercraft-slider {
 		width: 1200px;
-	}
-
-	.watercraft:before {
-		width: 487px;
-	}
-
-	.watercraft:after {
-		width: 487px;
 	}
 
 	.wrapper-s {
@@ -618,11 +1040,11 @@ h3 {
 		width: 1000px;
 	}
 
-	.watercraft:before {
+	.sea:before {
 		display: none;
 	}
 
-	.watercraft:after {
+	.sea:after {
 		display: none;
 	}
 }
@@ -637,11 +1059,87 @@ h3 {
 	.rental ol {
 		width: 70%;
 	}
+
+	.skated-slider {
+		width: 60%;
+	}
+
+	.s-description {
+		width: 300px;
+	}
+
+	.not-skated h3 {
+		font-size: 65px;
+	}
+
+	.not-skated p {
+		font-size: 18px;
+	}
+
+	.certificate-f {
+		width: 98%;
+	}
+
+	.gift .gift-submit {
+		text-align: center;
+	}
+
+	.wrapper-sub:after {
+		left: 10%;
+		right: 0;
+		margin: auto;
+	}
+
+	.gift h4 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+
+	.gift h5 {
+		font-size: 20px;
+		margin-bottom: 20px;
+	}
+
+	.wrapper-sub {
+		margin-top: 30px;
+	}
+
+	.map-w p {
+		padding-left: 60px;
+	}
+
+	.phone:before {
+		left: 3%;
+	}
+
+	.clock:before {
+		left: 3%;
+	}
+
+	.footer-a:before {
+		left: 3%;
+	}
+
+	.map-w ul {
+		padding-left: 82px;
+	}
 }
 
 @media (max-width: 1005px) {
 	.watercraft-slider {
 		width: 100%;
+	}
+
+	.watercraft-slider:before {
+		display: none;
+	}
+
+	.watercraft-slider:after {
+		display: none;
+	}
+
+	.s-description {
+		width: 290px;
 	}
 }
 
@@ -682,6 +1180,17 @@ h3 {
 	.drive-items figure {
 		display: block;
 	}
+
+	.certificate-f-left {
+		display: none;
+	}
+
+	.certificate-f-right {
+		float: none;
+		width: 98%;
+		padding-left: 5%;
+		padding-top: 10px;
+	}
 }
 
 @media (max-width: 768px) {
@@ -700,6 +1209,30 @@ h3 {
 
 	.yellow-btn {
 		margin: 0 auto;
+	}
+
+	.s-description {
+		max-width: 100%;
+		width: 100%;
+		text-align: center;
+		padding: 10px;
+		float: none;
+	}
+
+	.not-skated h3 {
+		text-align: center;
+		background: url(../images/sea-s-h3.png) no-repeat center 100%;
+	}
+
+	.skated-slider {
+		max-width: 100%;
+		width: 100%;
+		padding: 10px;
+		float: none;
+	}
+
+	.video-slider iframe {
+		height: auto;
 	}
 }
 
@@ -720,6 +1253,24 @@ h3 {
 @media (max-width: 500px) {
 	.yellow-btn-bg {
 		width: 250px;
+	}
+
+	.certificate-size {
+		font-size: 40px;
+		margin-top: 20px;
+	}
+
+	.certificate-f-right h5 {
+		margin-top: 10px;
+		margin-bottom: 8px;
+	}
+
+	.certificate-f-right h4 {
+		margin-bottom: 20px;
+	}
+
+	..map-w:before {
+		background: none;
 	}
 }
 /* end media */
