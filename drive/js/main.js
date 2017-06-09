@@ -93,4 +93,40 @@ $(document).ready(function(){
 	$('.grid').masonry({
 		itemSelector: '.grid-item'
 	});
+
+	//popap
+	$(".popup-show").click(function() {
+		$(".show-form").show('slow');
+	});
+
+	$(".form").click(function() {
+		event.stopPropagation();
+	});
+
+	$(".clouse-popup").click(function() {
+		$(".popup").hide('slow');
+	});
+
+	$(".end-succses").click(function() {
+		$(".succsec-popap").hide('slow');
+	});
+
+	// ajax
+	$(".form").submit(function() {
+		var form_data = $(this).serialize();
+		$.ajax({
+		type: "POST",
+		url: "res.php",
+		data: form_data,
+			error: function (request, error) {
+				$(".popup").hide();
+				alert('error');
+			},
+			success: function() {
+				$(".popup").hide();
+				$(".succsec-popap").show('slow');
+			}
+		});
+		return false;
+	});
 });
