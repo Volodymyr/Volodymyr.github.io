@@ -1,5 +1,5 @@
 <?
-	$to = 'vovazaikin3188@gmail.com';
+	$to = 'drive.spb2017@yandex.ru';
 	$subject = 'Заявка';
 	$message = '
 		<html>
@@ -12,6 +12,6 @@
 			</body>
 		</html>';
 	$headers  = "Content-type: text/html; charset=utf-8 \r\n";
-	$headers .= "From: Отправитель Гидроциклы\r\n";
+	$headers .= "From: Отправитель <Гидроциклы>\r\n";
 	mail($to, $subject, $message, $headers);
 ?>

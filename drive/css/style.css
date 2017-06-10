@@ -840,6 +840,7 @@ h3 {
 	width: 155px;
 	height: 155px;
 	border-radius: 50%;
+	margin: 0 auto;
 }
 
 #reviews {
@@ -1179,7 +1180,9 @@ h3 {
 	font-family: UbuntuMono-Bold;
 }
 
-
+.g-recaptcha>div {
+	margin: 0 auto;
+}
 /* end popap */
 
 /* media */
