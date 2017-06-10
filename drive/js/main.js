@@ -1,4 +1,10 @@
 $(document).ready(function(){
+	//gallery
+
+	$('.grid').masonry({
+		itemSelector: '.grid-item'
+	});
+	
 	$('.watercraft-slider').slick({
 		slidesToShow: 5,
 		autoplay: true,
@@ -86,12 +92,6 @@ $(document).ready(function(){
 			//анимируем переход на расстояние - top за 1500 мс
 			$('body,html').animate({scrollTop: top}, 1500);
 		});
-	});
-
-	//gallery
-
-	$('.grid').masonry({
-		itemSelector: '.grid-item'
 	});
 
 	//popap
