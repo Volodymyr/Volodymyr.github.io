@@ -847,7 +847,7 @@ h3 {
 	margin: auto;
 	color: #fff;
 	font-size: 20px;
-	background: rgba(0, 0, 255, 0.6);
+	background: rgba(13, 124, 165, 0.8);
 	padding-top: 10px;
 }
 
@@ -1238,6 +1238,10 @@ h3 {
 
 	.sea:after {
 		display: none;
+	}
+
+	.map {
+		background: #a3ccff url(../images/map.png) no-repeat 44%;
 	}
 }
 
