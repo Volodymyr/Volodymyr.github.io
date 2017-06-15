@@ -824,6 +824,7 @@ h3 {
 
 .grid-item {
 	width: 19.99%;
+	float: left;
 }
 
 .grid-item img {
