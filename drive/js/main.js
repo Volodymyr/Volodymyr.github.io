@@ -1,9 +1,15 @@
-$(document).ready(function(){
-		//gallery
-
+$( window ).load(function() {
 	$('.grid').masonry({
 		itemSelector: '.grid-item'
 	});
+});
+
+$(document).ready(function(){
+		//gallery
+
+	// $('.grid').masonry({
+	// 	itemSelector: '.grid-item'
+	// });
 
 	//slick
 	$('.watercraft-slider').slick({
