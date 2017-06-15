@@ -1,6 +1,11 @@
 $(document).ready(function(){
-	//slick
+		//gallery
 
+	$('.grid').masonry({
+		itemSelector: '.grid-item'
+	});
+
+	//slick
 	$('.watercraft-slider').slick({
 		slidesToShow: 5,
 		autoplay: true,
@@ -70,13 +75,6 @@ $(document).ready(function(){
 			}
 		}
 		]
-	});
-
-	//gallery
-
-	$('.grid').masonry({
-		itemSelector: '.grid-item',
-		columnWidth: 19.9
 	});
 
 	//Links

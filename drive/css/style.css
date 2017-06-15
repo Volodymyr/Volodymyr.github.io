@@ -411,16 +411,27 @@ h3 {
 	height: 150px;
 	background: #fff;
 	border: 10px solid #ebf6fd;
+	z-index: 2222;
 }
 
 .watercraft-slider figure:hover img {
-	width: 300px;
-	height: 200px;
+	width: 280px;
+	height: 180px;
 	border: 10px solid #00bfdc;
+	z-index: 5555;
 }
 
 .watercraft-slider figure:hover .w-size span {
 	background: #ebf6fd;
+}
+
+.watercraft-slider div {
+	z-index: 222;
+	position: relative;
+}
+
+.watercraft-slider div:hover {
+	z-index: 5555;
 }
 
 .watercraft-slider {
@@ -564,6 +575,15 @@ h3 {
 	margin: 0 auto;
 }
 
+.sea-slider div {
+	position: relative;
+	z-index: 2222;
+}
+
+.sea-slider div:hover {
+	z-index: 5555;
+}
+
 .sea-slider img {
 	width: 258px;
 	height: 208px;
@@ -576,12 +596,14 @@ h3 {
 }
 
 .sea .sea-slider img:hover {
-	width: 300px;
-	height: 250px;
+	width: 270px;
+	height: 220px;
 }
 
 .sea .wrapper-s {
 	height: 250px;
+	z-index: 5;
+	position: relative;
 }
 
 .slick-prev:before,
@@ -622,6 +644,8 @@ h3 {
 	padding-left: 10px;
 	padding-right: 10px;
 	margin: 0 auto;
+	position: relative;
+	z-index: 555;
 }
 
 .not-skated h3 {
@@ -803,6 +827,7 @@ h3 {
 
 .grid-item img {
 	width: 100%;
+	height: auto;
 	float: left;
 }
 
@@ -820,7 +845,7 @@ h3 {
 	right: 0;
 	margin: auto;
 	color: #fff;
-	font-size: 20px;
+	font-size: 16px;
 	background: rgba(0, 0, 0, .8);
 	padding-top: 20%;
 }
@@ -1091,18 +1116,18 @@ h3 {
 	position: absolute;
 	background: #fff url(../images/form-top.png) no-repeat top center;
 	z-index: 9999;
-	top: 20%;
+	top: 10%;
 	left: 0;
 	right: 0;
 	margin: auto;
 	max-width: 492px;
 	border-radius: 10px;
-	padding: 150px 50px 50px 50px;
+	padding: 100px 50px 50px 50px;
 }
 
 .wrapper-popap h3 {
 	background: url(../images/sea-s-h3.png) no-repeat center 100%;
-	margin-bottom: 60px;
+	margin-bottom: 35px;
 }
 
 .wrapper-popap p {
@@ -1114,7 +1139,7 @@ h3 {
 	color: #808080;
 	font-size: 16px;
 	font-family: Ubuntu-Regular;
-	padding: 23px;
+	padding: 15px;
 	border-radius: 10px;
 	border: 1px solid #d9d9d9;
 	outline: none;
@@ -1130,7 +1155,7 @@ h3 {
 
 .wrapper-submit {
 	position: relative;
-	margin-top: 80px;
+	margin-top: 40px;
 }
 
 .wrapper-submit:after {
@@ -1186,7 +1211,6 @@ h3 {
 /* end popap */
 
 /* media */
-
 @media (max-width: 1686px) {
 	.watercraft-slider {
 		width: 1200px;
@@ -1356,6 +1380,21 @@ h3 {
 }
 
 @media (max-width: 768px) {
+	.wrapper-popap {
+		width: 90%;
+		padding-right: 5px;
+		padding-left: 5px;
+	}
+
+	.wrapper-popap h3 {
+		font-size: 25px;
+		margin-bottom: 25px;
+	}
+
+	.g-recaptcha {
+
+	}
+
 	.carousel {
 		max-width: 100%;
 		background-size: 100% 100%;
@@ -1410,6 +1449,10 @@ h3 {
 	.rental ol {
 		width: 100%;
 	}
+
+	.map-w:before {
+		display: none !important;
+	}
 }
 
 @media (max-width: 500px) {
@@ -1429,10 +1472,6 @@ h3 {
 
 	.certificate-f-right h4 {
 		margin-bottom: 20px;
-	}
-
-	..map-w:before {
-		background: none;
 	}
 }
 /* end media */
