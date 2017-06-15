@@ -1475,6 +1475,10 @@ h3 {
 	.f-map img{
 		display: block;
 	}
+
+	.map {
+		background: #a3ccff;
+	}
 }
 
 @media (max-width: 500px) {
