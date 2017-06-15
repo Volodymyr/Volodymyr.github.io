@@ -1102,6 +1102,7 @@ h3 {
 
 .f-map img{
 	width: 100%;
+	display: none;
 }
 /* end footer */
 
@@ -1467,7 +1468,7 @@ h3 {
 		display: none !important;
 	}
 
-	.f-map {
+	.f-map img{
 		display: block;
 	}
 }
