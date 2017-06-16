@@ -40,7 +40,7 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 2000,
 		dots: true,
-		slidesToScroll: 3,
+		slidesToScroll: 1,
 		responsive: [
 		{
 			breakpoint: 1282,
@@ -64,7 +64,7 @@ $(document).ready(function(){
 		autoplay: true,
 		autoplaySpeed: 2000,
 		dots: true,
-		slidesToScroll: 3,
+		slidesToScroll: 1,
 		responsive: [
 		{
 			breakpoint: 1282,
