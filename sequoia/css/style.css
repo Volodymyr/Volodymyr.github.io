@@ -49,11 +49,20 @@ table {
 	font-family: CenturyGothicRegular;
 	src: url(../fonts/CenturyGothicRegular.ttf);
 }
+
+@font-face {
+	font-family: CenturyGothicBold;
+	src: url(../fonts/CenturyGothicBold.ttf);
+}
 /* end fonts */
 
 /* common */
 input {
 	outline: none;
+}
+
+.onepage-pagination {
+	top: 25%;
 }
 /* end common */
 
@@ -505,6 +514,327 @@ input[type="checkbox"]:checked + label::before {
 }
 /* end sec-2 */
 
+/* sec-3 */
+.sec-3 {
+	background: url(../images/sec-3/sec-3-04.png) no-repeat center;
+	background-size: cover;
+}
+
+.services>div {
+	float: right;
+	height: 100vh;
+	font-family: CenturyGothicRegular;
+}
+
+.services-left>div {
+	float: left;
+	height: 100vh;
+	font-family: CenturyGothicRegular;
+}
+
+.price {
+	width: 40%;
+	background: #060606;
+	color: #edeef0;
+	padding: 10% 2%;
+	display: none;
+}
+
+.price h3 {
+	text-align: center;
+	font-size: 3vw;
+	font-family: CenturyGothicBold;
+}
+
+.price .sec-3-price {
+	font-size: 2.8125vw;
+	font-family: CenturyGothicBold;
+	margin: 7% 0 5% 0;
+}
+
+.price p {
+	font-size: 2vw;
+	margin-bottom: 0.5%;
+}
+
+.price-tower {
+	font-size: 1.6vw;
+}
+
+.price-tower-1 {
+	margin-top: 7%;
+}
+
+.services-item {
+	width: 50%;
+	background: rgba(20, 37, 51, .7);
+	color: #edeef0;
+	position: relative;
+}
+
+.services-item h2 {
+	font-size: 3.5vw;
+	text-align: right;
+	border: 0.4vw solid #047a6b;
+	padding: 1% 4%;
+	position: relative;
+	left: -8%;
+	margin-top: 2%;
+}
+
+.sec-7 h2 {
+	font-size: 2.4vw;
+}
+
+.services-left h2 {
+	text-align: left;
+	left: 8%;
+}
+
+.services-item h2:hover {
+	color: #047a6b;
+}
+
+.services-item-description {
+	padding: 3% 2% 2% 8%;
+}
+
+.services-left .services-item-description {
+	padding: 3% 8% 2% 2%;
+}
+
+.services-tabs li {
+	font-size: 2vw;
+	float: left;
+	margin-right: 14%;
+	cursor: pointer;
+	padding-bottom: 1%;
+}
+
+.services-left .services-tabs li {
+	font-size: 1.65vw;
+	margin-right: 2%;
+}
+
+.sec-7 .services-tabs li {
+	font-size: 1.5vw;
+	margin-right: 6%;
+}
+
+.sec-9 .services-tabs li {
+	font-size: 1.3vw;
+	margin-right: 3%;
+}
+
+.sec-8 .services-tabs li {
+	margin-right: 10%;
+}
+
+.services-tabs:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.services-tabs li:hover {
+	border-bottom: 0.2vw solid #047a6b;
+}
+
+.active-tab {
+	border-bottom: 0.2vw solid #047a6b;
+}
+
+.services-tabs li:last-child {
+	margin-right: 0;
+}
+
+.services-txt {
+	font-size: 1.6vw;
+	margin-top: 2%;
+	display: none;
+}
+
+.services-a-txt {
+	display: block;
+}
+
+.services-video {
+	text-align: right;
+	margin-top: 2%;
+}
+
+.services-video iframe {
+	width: 60%;
+	height: 16vw;
+}
+
+.order {
+	position: absolute;
+	bottom: 2%;
+	right: 2%;
+	font-size: 3vw;
+	padding: 1%;
+	border: 0.2vw solid #f8f8f8;
+	cursor: pointer;
+}
+
+.services-left .order {
+	right: 66%;
+}
+
+.order:hover {
+	color: #047a6b;
+	border: 0.2vw solid #047a6b;
+}
+
+.services-price {
+	position: absolute;
+	bottom: 2%;
+	left: 8%;
+	font-size: 3vw;
+	width: 25%;
+	text-align: right;
+	height: 8%;
+	cursor: pointer;
+	background: url(../images/arrow.png) no-repeat left bottom;
+	background-size: 73%;
+}
+
+.services-left .services-price {
+	left: 66%;
+	text-align: left;
+	background: url(../images/arrow-left.png) no-repeat right bottom;
+	background-size: 73%;
+}
+
+.services-price:hover {
+	color: #047a6b;
+	background: url(../images/arrow-a.png) no-repeat left bottom;
+	background-size: 73%;
+}
+
+.services-left .services-price:hover {
+	background: url(../images/arrow-a-left.png) no-repeat right bottom;
+	background-size: 73%;
+}
+/* end sec-3 */
+
+/* sec-4 */
+.sec-4 {
+	background: url(../images/sec-4/sec-4.png) no-repeat center;
+	background-size: cover;
+}
+/* end sec-4 */
+
+/* sec-5*/
+.sec-5 {
+	background: url(../images/sec-5/sec-5.png) no-repeat center;
+	background-size: cover;
+}
+/* end sec-5 */
+
+/* sec-6*/
+.sec-6 {
+	background: url(../images/sec/sec-6.png) no-repeat center;
+	background-size: cover;
+}
+/* end sec-6 */
+
+/* sec-7*/
+.sec-7 {
+	background: url(../images/sec/sec-7.png) no-repeat center;
+	background-size: cover;
+}
+/* end sec-7 */
+
+/* sec-8*/
+.sec-8 {
+	background: url(../images/sec/sec-8.png) no-repeat center;
+	background-size: cover;
+}
+/* end sec-8 */
+
+/* sec-9*/
+.sec-9 {
+	background: url(../images/sec/sec-9.png) no-repeat center;
+	background-size: cover;
+}
+/* end sec-9 */
+
+/* sec-10*/
+.sec-10 {
+	background: url(../images/sec/sec-9.png) no-repeat center;
+	background-size: cover;
+}
+/* end sec-10 */
+
+/* sec-11*/
+.sec-11 {
+	background: url(../images/sec/sec-11.png) no-repeat center;
+	background-size: cover;
+}
+/* end sec-11 */
+
+/* sec-12*/
+.sec-12 {
+	background: url(../images/sec-12/sec-12.png) no-repeat center;
+	background-size: cover;
+	padding: 5% 4.5%;
+	box-sizing: border-box;
+}
+
+.sec-12 h2 {
+	font-size: 5.5vw;
+	font-family: CenturyGothicBold;
+	color: #000005;
+	text-align: center;
+	margin-bottom: 3%;
+}
+
+.sec-12-men {
+	position: absolute;
+	left: 0;
+	right: 0;
+	margin: auto;
+	bottom: 0;
+	width: 25%;
+}
+
+.sec-12 div {
+	width: 38.62%;
+	background: rgba(159, 187, 182, .6);
+	padding: 2%;
+}
+
+.sec-12 h3 {
+	color: #000;
+	font-family: CenturyGothicBold;
+	font-size: 2vw;
+	text-align: center;
+	padding: 5% 0;
+	background: url(../images/sec-12/sec-12-txt.png) no-repeat 5% center;
+	background-size: 15%;
+}
+
+.sec-12 p {
+	font-family: 'Cormorant SC', serif;
+	font-size: 2vw;
+}
+
+.sec-12-right {
+	float: right;
+	position: relative;
+	bottom: 10%;
+}
+
+.sec-12-right h3 {
+	z-index: 55;
+	position: relative;
+}
+/* end sec-12 */
+
 /* media */
 @media (max-width: 1290px) {
 	.wrapper-left-men,
@@ -514,6 +844,35 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 768px) {
+	.sec-12 p {
+		font-size: 4vw;
+	}
+	.sec-12 h3 {
+		font-size: 4vw;
+	}
+	.sec-12 div,
+	.sec-12-right {
+		float: none;
+		width: 95%;
+		margin: 20px auto;
+	}
+	.sec-12-right {
+		bottom: 0;
+	}
+	.services-video iframe {
+		width: 100%;
+		height: 25vw;
+	}
+	.services-price {
+		height: 3%;
+	}
+	.services-tabs li {
+		font-size: 2.5vw;
+		margin-right: 3%;
+	}
+	.services-txt {
+		font-size: 2.5vw;
+	}
 	.wrapper-left-men,
 	.wrapper-right-men {
 		bottom: 1.1%;

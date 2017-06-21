@@ -36,4 +36,80 @@ $(document).ready(function(){
       console.log(checkbox);
    });
 
+   //services
+   $(".services-price").click(function() {
+      $(".price").toggle();
+   });
+
+   $(".sec-3 .services-tab").click(function() {
+      var cl = $(this).data("cl");
+      var secBg = $(this).data("image")
+      $(".sec-3 .services-tab").removeClass('active-tab');
+      $(this).addClass('active-tab');
+      $(".sec-3 .services-txt").removeClass('services-a-txt');
+      $(".sec-3 ."+cl+"").addClass( "services-a-txt" );
+      $(".sec-3").css({"background": secBg, "background-size": "cover"});
+   });
+
+   $(".sec-4 .services-tab").click(function() {
+      var cl = $(this).data("cl");
+      var secBg = $(this).data("image")
+      $(".sec-4 .services-tab").removeClass('active-tab');
+      $(this).addClass('active-tab');
+      $(".sec-4 .services-txt").removeClass('services-a-txt');
+      $(".sec-4 ."+cl+"").addClass( "services-a-txt" );
+      $(".sec-4").css({"background": secBg, "background-size": "cover"});
+   });
+
+   $(".sec-5 .services-tab").click(function() {
+      var cl = $(this).data("cl");
+      var secBg = $(this).data("image")
+      $(".sec-5 .services-tab").removeClass('active-tab');
+      $(this).addClass('active-tab');
+      $(".sec-5 .services-txt").removeClass('services-a-txt');
+      $(".sec-5 ."+cl+"").addClass( "services-a-txt" );
+      $(".sec-5").css({"background": secBg, "background-size": "cover"});
+   });
+
+   $(".sec-6 .services-tab").click(function() {
+      var cl = $(this).data("cl");
+      var secBg = $(this).data("image")
+      $(".sec-6 .services-tab").removeClass('active-tab');
+      $(this).addClass('active-tab');
+      $(".sec-6 .services-txt").removeClass('services-a-txt');
+      $(".sec-6 ."+cl+"").addClass( "services-a-txt" );
+      $(".sec-6").css({"background": secBg, "background-size": "cover"});
+   });
+
+   $(".sec-7 .services-tab").click(function() {
+      var cl = $(this).data("cl");
+      var secBg = $(this).data("image")
+      $(".sec-7 .services-tab").removeClass('active-tab');
+      $(this).addClass('active-tab');
+      $(".sec-7 .services-txt").removeClass('services-a-txt');
+      $(".sec-7 ."+cl+"").addClass( "services-a-txt" );
+      $(".sec-7").css({"background": secBg, "background-size": "cover"});
+   });
+
+   $(".sec-8 .services-tab").click(function() {
+      var cl = $(this).data("cl");
+      var secBg = $(this).data("image")
+      $(".sec-8 .services-tab").removeClass('active-tab');
+      $(this).addClass('active-tab');
+      $(".sec-8 .services-txt").removeClass('services-a-txt');
+      $(".sec-8 ."+cl+"").addClass( "services-a-txt" );
+      $(".sec-8").css({"background": secBg, "background-size": "cover"});
+   });
+
+   $(".sec-9 .services-tab").click(function() {
+      var cl = $(this).data("cl");
+      var secBg = $(this).data("image")
+      $(".sec-9 .services-tab").removeClass('active-tab');
+      $(this).addClass('active-tab');
+      $(".sec-9 .services-txt").removeClass('services-a-txt');
+      $(".sec-9 ."+cl+"").addClass( "services-a-txt" );
+      $(".sec-9").css({"background": secBg, "background-size": "cover"});
+   });
+
+
 });
