@@ -29,6 +29,10 @@ $(document).ready(function(){
       $(".main").moveTo(19);
    });
 
+   $(".f-to-top").click(function() {
+      $(".main").moveTo(1);
+   });
+
    //add man
    $(".add-man").click(function() {
       var man = $(this).data("man");
@@ -54,7 +58,9 @@ $(document).ready(function(){
 
    //services
    $(".services-price").click(function() {
-      $(".price").toggle();
+      var perent = $(this).closest("section").find('.price').toggle("slow");
+      console.log($(this).closest("section").find('.price'));
+
    });
 
    $(".sec-3 .services-tab").click(function() {
@@ -126,6 +132,24 @@ $(document).ready(function(){
       $(".sec-9 ."+cl+"").addClass( "services-a-txt" );
       $(".sec-9").css({"background": secBg, "background-size": "cover"});
    });
+
+   //popap
+   $(".open-popap").click(function() {
+      $(".show-form").show('slow');
+   });
+
+   $(".form").click(function() {
+      event.stopPropagation();
+   });
+
+   $(".clouse-popup").click(function() {
+      $(".popup").hide('slow');
+   });
+
+   $(".end-succses").click(function() {
+      $(".succsec-popap").hide('slow');
+   });
+
 
    //slider
 
