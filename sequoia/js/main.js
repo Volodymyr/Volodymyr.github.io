@@ -185,4 +185,20 @@ $(document).ready(function(){
 
    $('.carousel').carousel();
 
+   $('.item-men img').click(function() {
+      var cl = $(this).data("cl");
+
+      $(".description-men .active-men").removeClass('active-men');
+      $("."+cl+"").addClass('active-men');
+
+      $(".wrapper-man-i img").attr('src', './images/sec-16/'+cl+'.png');
+
+      // $(".line-men .active-man").removeClass('active-man');
+      // $(this).parent().addClass('active-man');
+
+      $(".line-men .active-man").appendTo(".list-man").removeClass('active-man');
+      $(this).parent().addClass('active-man');
+      console.log(cl);
+   });
+
 });

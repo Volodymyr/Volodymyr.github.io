@@ -1345,6 +1345,135 @@ input[type="checkbox"]:checked + label::before {
 	background: url(../images/form-cross.png) no-repeat;
 	cursor: pointer;
 }
+
+/* sec-16 */
+.sec-16 {
+	background: url(../images/sec/sec-16.png) no-repeat center;
+	background-size: cover;
+	padding: 2%;
+}
+
+.sec-16 h2 {
+	font-family: CenturyGothicRegular;
+	color: #f8f8f8;
+	font-size: 5vw;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.own-img {
+	width: 40%;
+	float: left;
+	position: relative;
+}
+
+.description-men {
+	width: 60%;
+	float: right;
+	color: #f8f8f8;
+	font-family: CenturyGothicRegular;
+	font-size: 1.5vw;
+}
+
+.description-men div {
+	display: none;
+}
+
+.description-men .active-men {
+	display: block;
+}
+
+.description-men p {
+	margin-bottom: 1%;
+}
+
+.name-men {
+	font-size: 3vw;
+	margin-bottom: 2%;
+}
+
+.wrapper-man-i {
+	width: 65%;
+	height: 25vw;
+	border: 0.5vw solid #f8f8f8;
+	margin: 4% auto;
+	position: relative;
+	text-align: center;
+	z-index: 5;
+}
+
+.bg-men {
+	content: " ";
+	display: block;
+	width: 65%;
+	height: 25vw;
+	background: rgba(26, 97, 88, 0.5);
+	position: absolute;
+	top: 2%;
+	left: 15%;
+	z-index: 1;
+}
+
+.wrapper-man-i img {
+	width: 75%;
+}
+
+.wrapper-man-i:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+
+.line-men {
+	height: 20%;
+	background: rgba(167, 167, 168, 0.6);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	box-sizing: border-box;
+	padding: 1%;
+}
+
+.list-man {
+	width: 100%;
+	text-align: right;
+}
+
+.list-man .item-men{
+	display: inline-block;
+	text-align: center;
+	width: 10%;
+	height: 9.2vw;
+	background: rgba(20, 18, 17, .5);
+	position: relative;
+	cursor: pointer;
+	margin-left: 1%;
+}
+
+.list-man .item-men:hover {
+	background: rgba(26, 97, 88, 0.5);
+}
+
+.item-men img {
+	width: 71%;
+	position: absolute;
+	top: -7px;
+	left: 0;
+	right: 0;
+	margin: auto;
+}
+
+.list-man .active-man {
+	float: left;
+	text-align: center;
+	background: rgba(26, 97, 88, 0.5);
+	width: 10%;
+}
+/* end sec-16 */
+
 /* media */
 @media (max-width: 1290px) {
 	.wrapper-left-men,
