@@ -669,7 +669,7 @@ input[type="checkbox"]:checked + label::before {
 	margin-top: 2%;
 	position: absolute;
 	right: 3.5%;
-	bottom: 0;
+	bottom: 5%;
 	width: 60%;
 }
 
@@ -708,7 +708,7 @@ input[type="checkbox"]:checked + label::before {
 	font-size: 3vw;
 	width: 25%;
 	text-align: right;
-	height: 8%;
+	height: 9.5%;
 	cursor: pointer;
 	background: url(../images/arrow.png) no-repeat left bottom;
 	background-size: 73%;
@@ -861,7 +861,12 @@ input[type="checkbox"]:checked + label::before {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-webkit-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
+	height: 46vw;
 }
 
 .wrapper-sec-13 img {
@@ -1074,7 +1079,7 @@ input[type="checkbox"]:checked + label::before {
 	color: #f8f8f8;
 	font-size: 5.25vw;
 	text-align: center;
-	margin-bottom: 7%;
+	margin-bottom: 3%;
 }
 
 .carousel {
@@ -1147,16 +1152,16 @@ input[type="checkbox"]:checked + label::before {
 .sec-18 {
 	background: url(../images/sec/sec-18.png) no-repeat center;
 	background-size: cover;
-	padding: 2%;
+	padding: 1%;
 	text-align: center;
 }
 
 .sec-18 h2 {
 	font-family: CenturyGothicRegular;
 	color: #000005;
-	font-size: 5vw;
+	font-size: 4vw;
 	text-align: center;
-	margin-bottom: 5%;
+	margin-bottom: 3%;
 }
 
 .sec-18 h2:hover {
@@ -1172,8 +1177,8 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .sec-18 iframe {
-	width: 44%;
-	height: 24vw;
+	width: 41%;
+	height: 22vw;
 }
 /* end sec-18 */
 
@@ -1276,7 +1281,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .f-to-top {
-	position: absolute;
+	position: fixed;
 	bottom: 4%;
 	right: -15%;
 	z-index: 99;
@@ -1358,7 +1363,7 @@ input[type="checkbox"]:checked + label::before {
 	color: #f8f8f8;
 	font-size: 5vw;
 	text-align: center;
-	margin-bottom: 5%;
+	margin-bottom: 2%;
 }
 
 .own-img {
@@ -1394,7 +1399,7 @@ input[type="checkbox"]:checked + label::before {
 
 .wrapper-man-i {
 	width: 65%;
-	height: 25vw;
+	height: 23vw;
 	border: 0.5vw solid #f8f8f8;
 	margin: 4% auto;
 	position: relative;
@@ -1406,7 +1411,7 @@ input[type="checkbox"]:checked + label::before {
 	content: " ";
 	display: block;
 	width: 65%;
-	height: 25vw;
+	height: 23vw;
 	background: rgba(26, 97, 88, 0.5);
 	position: absolute;
 	top: 2%;
@@ -1415,7 +1420,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .wrapper-man-i img {
-	width: 75%;
+	width: 65%;
 }
 
 .wrapper-man-i:after {
