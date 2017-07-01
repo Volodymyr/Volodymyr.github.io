@@ -880,17 +880,17 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .sec-13-year {
-	font-size: 2.7vw;
+	font-size: 2.5vw;
 }
 
 .sec-13-piles {
-	font-size: 2.5vw;
+	font-size: 2.3vw;
 	margin-bottom: 5%;
 	margin-top: 2%;
 }
 
 .sec-13-last {
-	font-size: 2.1vw;
+	font-size: 2vw;
 }
 /* end sec-13 */
 
