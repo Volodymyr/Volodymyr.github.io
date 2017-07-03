@@ -153,19 +153,56 @@ $(document).ready(function(){
 
    //slider
 
-   $(".slider li").on("click", function(){
-      var widthLi = $(".slider li").outerWidth(true);
+   $(".slider-1 li").on("click", function(){
+      var widthLi = $(".slider-1 li").outerWidth(true);
       var item = $(this),
       pos = "-"+(item.index() * widthLi)+"px";
 
       item.addClass("active");
       item.siblings().removeClass("active");
 
-      $(".slider ul").css("left", pos);
+      $(".slider-1 ul").css("left", pos);
+   });
+
+   $(".slider-2 li").on("click", function(){
+      var widthLi = $(".slider-2 li").outerWidth(true);
+      var item = $(this),
+      pos = "-"+(item.index() * widthLi)+"px";
+
+      item.addClass("active");
+      item.siblings().removeClass("active");
+
+      $(".slider-2 ul").css("left", pos);
+   });
+
+   $(".slider-3 li").on("click", function(){
+      var widthLi = $(".slider-3 li").outerWidth(true);
+      var item = $(this),
+      pos = "-"+(item.index() * widthLi)+"px";
+
+      item.addClass("active");
+      item.siblings().removeClass("active");
+
+      $(".slider-3 ul").css("left", pos);
+   });
+
+   $(".slider-4 li").on("click", function(){
+      var widthLi = $(".slider-4 li").outerWidth(true);
+      var item = $(this),
+      pos = "-"+(item.index() * widthLi)+"px";
+
+      item.addClass("active");
+      item.siblings().removeClass("active");
+
+      $(".slider-4 ul").css("left", pos);
    });
 
    $(".slider .next").on("click", function(){
       var item = $(".slider.active-sli");
+
+      // $(".slider li").removeClass("active");
+      // $('.slider').find("li").filter(':first').addClass("active");
+      // $(".slider ul").css("left", 0+"px");
 
       if(item.next().is(".slider")){
          item.removeClass("active-sli");

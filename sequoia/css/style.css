@@ -914,8 +914,8 @@ input[type="checkbox"]:checked + label::before {
 
 .slider {
 	position: relative;
-	left: -24%;
-	margin-left: 50%;
+	left: 25%;
+	width: 50%;
 	display: none;
 }
 .slider ul {
