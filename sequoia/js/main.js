@@ -165,21 +165,20 @@ $(document).ready(function(){
    });
 
    $(".slider .next").on("click", function(){
-      var item = $(".slider .active .slider-active-img");
+      var item = $(".slider.active-sli");
 
-      if(item.next().is(".sl-img")){
-         item.removeClass("slider-active-img");
-         item.next().addClass("slider-active-img");
+      if(item.next().is(".slider")){
+         item.removeClass("active-sli");
+         item.next().addClass("active-sli");
       }
-      console.log(item.next());
    });
 
    $(".slider .prev").on("click", function(){
-      var item = $(".slider .active .slider-active-img");
+      var item = $(".slider.active-sli");
 
-      if(item.prev().is(".sl-img")){
-         item.removeClass("slider-active-img");
-         item.prev().addClass("slider-active-img");
+      if(item.prev().is(".slider")){
+         item.removeClass("active-sli");
+         item.prev().addClass("active-sli");
       }
    });
 

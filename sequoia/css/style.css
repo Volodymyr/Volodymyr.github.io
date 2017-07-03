@@ -916,6 +916,7 @@ input[type="checkbox"]:checked + label::before {
 	position: relative;
 	left: -24%;
 	margin-left: 50%;
+	display: none;
 }
 .slider ul {
 	white-space: nowrap;
@@ -960,7 +961,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .slider li.active {
-	border: 0.3vw solid #000005;
 	margin-top: 0;
 }
 
@@ -971,13 +971,13 @@ input[type="checkbox"]:checked + label::before {
 .slider-description {
 	border-top: 0.3vw solid #000005;
 	margin-top: 2%;
-	display: none;
+	flex: 0 0 auto;
 }
 
 .slider-description h3 {
 	font-family: Candara;
 	color: #000;
-	font-size: 2.75vw;
+	font-size: 2vw;
 	margin: 2% 0;
 }
 
@@ -1001,13 +1001,31 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .slider .prev {
-	bottom: 10%;
-	left: -5%;
+	bottom: -20%;
+	left: -7%;
 }
 
 .slider .next {
-	bottom: 10%;
-	right: -5%;
+	bottom: -20%;
+	right: -7%;
+}
+
+.active-sli {
+	display: block;
+}
+
+.sl-descr {
+	position: absolute;
+	border: 0.3vw solid #000005;
+	box-sizing: border-box;
+	left: 0;
+	right: 0;
+	margin: auto;
+	top: 0;
+	padding: 2%;
+	height: 42vw;
+	display: flex;
+	flex-direction: column-reverse;
 }
 /* end sec-14 */
 
