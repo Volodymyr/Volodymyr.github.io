@@ -672,7 +672,7 @@ input[type="checkbox"]:checked + label::before {
 	margin-top: 2%;
 	position: absolute;
 	right: 3.5%;
-	bottom: 2%;
+	bottom: 5%;
 	width: 50%;
 }
 
@@ -914,9 +914,8 @@ input[type="checkbox"]:checked + label::before {
 
 .slider {
 	position: relative;
-	left: 25%;
-	width: 50%;
-	display: none;
+	left: -24%;
+	margin-left: 50%;
 }
 .slider ul {
 	white-space: nowrap;
@@ -961,6 +960,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .slider li.active {
+	border: 0.3vw solid #000005;
 	margin-top: 0;
 }
 
@@ -971,20 +971,20 @@ input[type="checkbox"]:checked + label::before {
 .slider-description {
 	border-top: 0.3vw solid #000005;
 	margin-top: 2%;
-	flex: 0 0 auto;
+	display: none;
 }
 
 .slider-description h3 {
 	font-family: Candara;
 	color: #000;
-	font-size: 2vw;
+	font-size: 1.9vw;
 	margin: 2% 0;
 }
 
 .slider-description p {
 	font-family: Candara;
 	color: #000;
-	font-size: 1.75vw;
+	font-size: 1.5vw;
 }
 
 .slider-b {
@@ -1001,31 +1001,13 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .slider .prev {
-	bottom: -20%;
-	left: -7%;
+	bottom: 10%;
+	left: -5%;
 }
 
 .slider .next {
-	bottom: -20%;
-	right: -7%;
-}
-
-.active-sli {
-	display: block;
-}
-
-.sl-descr {
-	position: absolute;
-	border: 0.3vw solid #000005;
-	box-sizing: border-box;
-	left: 0;
-	right: 0;
-	margin: auto;
-	top: 0;
-	padding: 2%;
-	height: 42vw;
-	display: flex;
-	flex-direction: column-reverse;
+	bottom: 10%;
+	right: -5%;
 }
 /* end sec-14 */
 
