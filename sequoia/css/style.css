@@ -152,13 +152,13 @@ input {
 	border: 10px solid rgba(4, 122, 107, .5);
 	background: rgba(6, 6, 6, .5);
 	position: absolute;
-	top: 0;
-	bottom: 0;
+	top: 16%;
 	left: 0;
 	right: 0;
 	margin: auto;
 	opacity: .9;
 	font-family: CenturyGothicRegular;
+	padding-bottom: 1%;
 }
 
 .wrapper-form h3 {
@@ -258,7 +258,7 @@ input {
 }
 
 input[type="checkbox"]:checked + label::before {
-	background: url(../images/ch-active.png) no-repeat;
+	background: rgba(4, 122, 107, 1) url(../images/ch-active.png) no-repeat;
 	background-size: cover;
 }
 
@@ -461,7 +461,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .man-3 .wrapper-description {
-	left: 20%;
+	left: 15%;
 }
 
 .wrapper-description {
@@ -471,6 +471,22 @@ input[type="checkbox"]:checked + label::before {
 	position: relative;
 	bottom: -50%;
 	display: none;
+}
+
+.man-6 .wrapper-description {
+	left: 15%;
+}
+
+.man-5 .wrapper-description {
+	left: -18%;
+}
+
+.man-4 .wrapper-description {
+	left: 0;
+}
+
+.man-1 .wrapper-description {
+	left: -17%;
 }
 
 .wrapper-description p {
@@ -596,10 +612,6 @@ input[type="checkbox"]:checked + label::before {
 	left: 8%;
 }
 
-.services-item h2:hover {
-	color: #047a6b;
-}
-
 .services-item-description {
 	padding: 3% 2% 2% 8%;
 	height: 75%;
@@ -661,6 +673,7 @@ input[type="checkbox"]:checked + label::before {
 	font-size: 1.6vw;
 	margin-top: 2%;
 	display: none;
+	text-align: center;
 }
 
 .services-a-txt {
@@ -689,7 +702,7 @@ input[type="checkbox"]:checked + label::before {
 	position: absolute;
 	bottom: 2%;
 	right: 2%;
-	font-size: 3vw;
+	font-size: 2vw;
 	padding: 1%;
 	border: 0.2vw solid #f8f8f8;
 	cursor: pointer;
@@ -709,30 +722,22 @@ input[type="checkbox"]:checked + label::before {
 	bottom: 2%;
 	left: 8%;
 	font-size: 3vw;
-	width: 25%;
+	width: 21%;
 	text-align: right;
-	height: 9.5%;
 	cursor: pointer;
-	background: url(../images/arrow.png) no-repeat left bottom;
-	background-size: 73%;
+	background: url(../images/arrow-2.png) no-repeat left bottom;
+	background-size: 22%;
 }
 
 .services-left .services-price {
 	left: 66%;
 	text-align: left;
-	background: url(../images/arrow-left.png) no-repeat right bottom;
-	background-size: 73%;
+	background: url(../images/arrow-2-left.png) no-repeat right bottom;
+	background-size: 22%;
 }
 
 .services-price:hover {
 	color: #047a6b;
-	background: url(../images/arrow-a.png) no-repeat left bottom;
-	background-size: 73%;
-}
-
-.services-left .services-price:hover {
-	background: url(../images/arrow-a-left.png) no-repeat right bottom;
-	background-size: 73%;
 }
 /* end sec-3 */
 
@@ -780,7 +785,7 @@ input[type="checkbox"]:checked + label::before {
 
 /* sec-10*/
 .sec-10 {
-	background: url(../images/sec/sec-9.png) no-repeat center;
+	background: url(../images/sec/sec-10.png) no-repeat center;
 	background-size: cover;
 }
 /* end sec-10 */
@@ -933,6 +938,7 @@ input[type="checkbox"]:checked + label::before {
 	box-sizing: border-box;
 	margin-top: 5%;
 	width: 95%;
+	position: relative;
 }
 
 .slider li img {
@@ -1008,6 +1014,23 @@ input[type="checkbox"]:checked + label::before {
 .slider .next {
 	bottom: 10%;
 	right: -5%;
+}
+
+.count-img {
+	position: absolute;
+	top: 5%;
+	right: 10%;
+	font-size: 1vw;
+	color: black;
+	border: 0.1vw solid black;
+	border-radius: 10px;
+	background: silver;
+	padding: 0.8% 1.3%;
+	display: none
+}
+
+.slider .active .count-img {
+	display: block;
 }
 /* end sec-14 */
 
@@ -1165,10 +1188,6 @@ input[type="checkbox"]:checked + label::before {
 	font-size: 4vw;
 	text-align: center;
 	margin-bottom: 3%;
-}
-
-.sec-18 h2:hover {
-	color: #fff;
 }
 
 .sec-18 h2 span {
@@ -1408,6 +1427,7 @@ input[type="checkbox"]:checked + label::before {
 	position: relative;
 	text-align: center;
 	z-index: 5;
+	overflow: hidden;
 }
 
 .bg-men {
@@ -1459,6 +1479,8 @@ input[type="checkbox"]:checked + label::before {
 	position: relative;
 	cursor: pointer;
 	margin-left: 1%;
+	left: 0;
+	-webkit-transition: top 1s ease-out 0.5s;
 }
 
 .list-man .item-men:hover {
@@ -1466,7 +1488,7 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .item-men img {
-	width: 71%;
+	width: 98%;
 	position: absolute;
 	top: -7px;
 	left: 0;
@@ -1479,6 +1501,7 @@ input[type="checkbox"]:checked + label::before {
 	text-align: center;
 	background: rgba(26, 97, 88, 0.5);
 	width: 10%;
+	-webkit-transition: top 1s ease-out 0.5s;
 }
 /* end sec-16 */
 
@@ -1490,7 +1513,6 @@ input[type="checkbox"]:checked + label::before {
 	}
 
 	.wrapper-form {
-		height: 69%;
 		width: 37.87%;
 	}
 
@@ -1622,12 +1644,6 @@ input[type="checkbox"]:checked + label::before {
 		color: #edeef0;
 		font-size: 2.25vw;
 		text-align: center;
-	}
-}
-
-@media (max-width: 340px) {
-	.wrapper-form {
-		height: 67.92%;
 	}
 }
 /* end media */
