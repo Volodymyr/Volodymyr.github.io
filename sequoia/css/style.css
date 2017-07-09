@@ -148,7 +148,6 @@ input {
 
 .wrapper-form {
 	width: 35.87%;
-	height: 67.92%;
 	border: 10px solid rgba(4, 122, 107, .5);
 	background: rgba(6, 6, 6, .5);
 	position: absolute;
@@ -1522,6 +1521,13 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 768px) {
+	.list-man {
+		overflow: hidden;
+	}
+
+	.item-men img {
+		top: 0;
+	}
 	.sec-17 h2 {
 		margin-bottom: 70%
 	}
