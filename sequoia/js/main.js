@@ -2,7 +2,7 @@ $(document).ready(function(){
    $(".main").onepage_scroll({
       sectionContainer: "section",
       easing: "ease",
-      animationTime: 400,
+      animationTime: 300,
       pagination: true,
       updateURL: false,
       beforeMove: function(index) {},
