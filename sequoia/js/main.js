@@ -26,7 +26,7 @@ $(document).ready(function(){
    });
 
    $(".to-sec-19").click(function() {
-      $(".main").moveTo(19);
+      $(".main").moveTo(18);
    });
 
    $(".f-to-top").click(function() {

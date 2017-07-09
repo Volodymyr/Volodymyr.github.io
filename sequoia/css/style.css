@@ -460,12 +460,16 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .man-3 .wrapper-description {
-	left: 15%;
+	left: 10%;
+}
+
+.man-2 .wrapper-description {
+	left: -4%;
 }
 
 .wrapper-description {
 	color: #000;
-	font-size: 1vw;
+	font-size: 0.8vw;
 	text-align: center;
 	position: relative;
 	bottom: -50%;
@@ -473,11 +477,11 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .man-6 .wrapper-description {
-	left: 15%;
+	left: 10%;
 }
 
 .man-5 .wrapper-description {
-	left: -18%;
+	left: -15%;
 }
 
 .man-4 .wrapper-description {
@@ -494,9 +498,9 @@ input[type="checkbox"]:checked + label::before {
 
 .add-man {
 	border: 2px solid #000;
-	padding: 5px;
+	padding: 4px;
 	cursor: pointer;
-	width: 42%;
+	width: 32%;
 	margin: 3% auto;
 }
 
@@ -536,7 +540,7 @@ input[type="checkbox"]:checked + label::before {
 
 /* sec-3 */
 .sec-3 {
-	background: url(../images/sec-3/sec-3-04.png) no-repeat center;
+	background: url(../images/sec-all/01.png) no-repeat center;
 	background-size: cover;
 }
 
@@ -742,56 +746,56 @@ input[type="checkbox"]:checked + label::before {
 
 /* sec-4 */
 .sec-4 {
-	background: url(../images/sec-4/sec-4.png) no-repeat center;
+	background: url(../images/sec-all/03.png) no-repeat center;
 	background-size: cover;
 }
 /* end sec-4 */
 
 /* sec-5*/
 .sec-5 {
-	background: url(../images/sec-5/sec-5.png) no-repeat center;
+	background: url(../images/sec-all/03.png) no-repeat center;
 	background-size: cover;
 }
 /* end sec-5 */
 
 /* sec-6*/
 .sec-6 {
-	background: url(../images/sec/sec-6.png) no-repeat center;
+	background: url(../images/sec-all/03.png) no-repeat center;
 	background-size: cover;
 }
 /* end sec-6 */
 
 /* sec-7*/
 .sec-7 {
-	background: url(../images/sec/sec-7.png) no-repeat center;
+	background: url(../images/sec-all/03.png) no-repeat center;
 	background-size: cover;
 }
 /* end sec-7 */
 
 /* sec-8*/
 .sec-8 {
-	background: url(../images/sec/sec-8.png) no-repeat center;
+	background: url(../images/sec-all/01.png) no-repeat center;
 	background-size: cover;
 }
 /* end sec-8 */
 
 /* sec-9*/
 .sec-9 {
-	background: url(../images/sec/sec-9.png) no-repeat center;
+	background: url(../images/sec-all/01.png) no-repeat center;
 	background-size: cover;
 }
 /* end sec-9 */
 
 /* sec-10*/
 .sec-10 {
-	background: url(../images/sec/sec-10.png) no-repeat center;
+	background: url(../images/sec-all/03.png) no-repeat center;
 	background-size: cover;
 }
 /* end sec-10 */
 
 /* sec-11*/
 .sec-11 {
-	background: url(../images/sec/sec-11.png) no-repeat center;
+	background: url(../images/sec-all/02.png) no-repeat center;
 	background-size: cover;
 }
 /* end sec-11 */
