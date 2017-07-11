@@ -518,12 +518,16 @@ input[type="checkbox"]:checked + label::before {
 /* sec-2 */
 .sec-2 {
 	background: url(../images/sec-bg/sec-2-bg.png) no-repeat center;
-	background-size: cover;
+	background-size: 100% 100%;
 	font-family: Candara;
 	color: #fff;
 	text-align: center;
-	padding-top: 11%;
+	padding-top: 14%;
 	box-sizing: border-box;
+}
+
+.sec-2-center {
+	padding: 0 12%;
 }
 
 .sec-2 h2 {
@@ -691,14 +695,15 @@ input[type="checkbox"]:checked + label::before {
 .services-video {
 	text-align: right;
 	margin-top: 2%;
-	position: absolute;
-	right: 3.5%;
+	margin-right: 3.5%;
 	bottom: 5%;
 	width: 50%;
+	float: right;
 }
 
 .services-left .services-video {
-	right: 47.5%;
+	float: left;
+	margin-left: 3.5%;
 }
 
 .services-video iframe {
@@ -882,7 +887,6 @@ input[type="checkbox"]:checked + label::before {
 	-webkit-transform: translate(-50%, -50%);
 	-o-transform: translate(-50%, -50%);
 	transform: translate(-50%, -50%);
-	height: 46vw;
 }
 
 .wrapper-sec-13 img {
@@ -915,6 +919,9 @@ input[type="checkbox"]:checked + label::before {
 	background: url(../images/sec/sec-14.png) no-repeat center;
 	background-size: cover;
 	padding: 1% 5%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .sec-14 h2 {
@@ -922,6 +929,7 @@ input[type="checkbox"]:checked + label::before {
 	color: #000005;
 	font-size: 5.25vw;
 	text-align: center;
+	margin-bottom: 4%;
 }
 
 
@@ -1188,6 +1196,8 @@ input[type="checkbox"]:checked + label::before {
 	background-size: cover;
 	padding: 1%;
 	text-align: center;
+	display: flex;
+	flex-direction: column;
 }
 
 .sec-18 h2 {
@@ -1207,8 +1217,9 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .sec-18 iframe {
-	width: 41%;
-	height: 22vw;
+	width: 45%;
+	height: 24vw;
+	margin: auto;
 }
 /* end sec-18 */
 
@@ -1463,7 +1474,6 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .line-men {
-	height: 20%;
 	background: rgba(167, 167, 168, 0.6);
 	position: absolute;
 	left: 0;
@@ -1530,6 +1540,11 @@ input[type="checkbox"]:checked + label::before {
 }
 
 @media (max-width: 768px) {
+	.wrapper-left-men,
+	.wrapper-right-men {
+		height: 30%;
+		bottom: 0;
+	}
 	.list-man {
 		overflow: hidden;
 	}
@@ -1562,9 +1577,6 @@ input[type="checkbox"]:checked + label::before {
 		width: 100%;
 		height: 25vw;
 	}
-	.services-price {
-		height: 3%;
-	}
 	.services-tabs li {
 		font-size: 2.5vw;
 		margin-right: 3%;
@@ -1572,22 +1584,12 @@ input[type="checkbox"]:checked + label::before {
 	.services-txt {
 		font-size: 2.5vw;
 	}
-	.wrapper-left-men,
-	.wrapper-right-men {
-		bottom: 1.1%;
-	}
 
 	.sec-2 {
-		padding-top: 60%;
-	}
-	.sec-2 h2 {
-		font-size: 7.5vw;
-		margin-bottom: 5%;
-	}
-
-	.sec-2 p {
-		font-size: 3.7vw;
-		margin-bottom: 5%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		padding-top: 0;
 	}
 
 	.sec-2 .sec-2-big-txt {
@@ -1659,6 +1661,106 @@ input[type="checkbox"]:checked + label::before {
 		color: #edeef0;
 		font-size: 2.25vw;
 		text-align: center;
+	}
+	.add-man {
+		width: 40%;
+		border: 0.2vw solid #000;
+	}
+	.wrapper-description {
+		font-size: 1vw;
+	}
+
+	.services-video {
+		width: 90%;
+	}
+
+	.wrapper-sec-13 {
+		width: 90%;
+	}
+
+	.wrapper-sec-15 {
+		width: 90%;
+		font-size: 3.5vw;
+	}
+
+	.sec-15-last {
+		font-size: 5.375vw;
+	}
+
+	.sec-15-btn span {
+		font-size: 5.125vw;
+	}
+	.sec-18 iframe {
+		width: 90%;
+		height: 44vw;
+	}
+	.sec-18 h2 {
+		font-size: 6vw;
+	}
+}
+
+@media (max-width: 420px) {
+	.wrapper-left-men,
+	.wrapper-right-men {
+		height: 25%;
+	}
+
+	.sec-12-men {
+		width: 43%;
+	}
+}
+
+@media only screen
+and (min-device-width: 768px)
+and (max-device-width: 1024px)
+and (orientation: portrait) {
+	.wrapper-form {
+		width: 55%;
+	}
+
+	.wrapper-checkbox label::before {
+		height: 1vh;
+		width: 7.5%;
+	}
+
+	.wrapper-left-men, .wrapper-right-men {
+		height: 445px;
+	}
+
+	.sec-12-men {
+		width: 40%;
+	}
+
+	.wrapper-sec-13 {
+		width: 90%;
+	}
+
+	.sec-18 iframe {
+		width: 70%;
+		height: 40vw;
+	}
+}
+
+@media only screen
+and (min-device-width: 1290px)
+and (max-device-width: 1367px)
+and (orientation: landscape) {
+	.wrapper-checkbox label::before {
+		height: 1.3vh;
+		width: 9.5%;
+	}
+
+	.wrapper-checkbox {
+		font-size: 0.9vw;
+	}
+
+	.sec-2 {
+		padding-top: 42%;
+	}
+
+	.sec-18 iframe {
+		width: 70%;
+		height: 40vw;
 	}
 }
 /* end media */

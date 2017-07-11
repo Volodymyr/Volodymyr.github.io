@@ -1,6 +1,33 @@
 $(function() {
    $.scrollify({
-      section : ".sec-scroll"
+      section : ".sec-scroll",
+      afterResize:function() {
+         if(window.matchMedia('(max-width: 768px)').matches) {
+            $.scrollify.disable();
+         }else{
+            $.scrollify.enable();
+         }
+      }
+   });
+
+   if(window.matchMedia('(max-width: 768px)').matches) {
+      $.scrollify.disable();
+   }
+
+   $(".to-sec-3").click(function() {
+      $.scrollify.move("#3");
+   });
+
+   $(".to-sec-14").click(function() {
+      $.scrollify.move("#14");
+   });
+
+   $(".to-sec-16").click(function() {
+      $.scrollify.move("#16");
+   });
+
+   $(".to-sec-19").click(function() {
+      $.scrollify.move("#18");
    });
 
    //add man
