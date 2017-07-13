@@ -42,15 +42,47 @@ $(function() {
 
    // form calc
    $(".form").change(function(){
-      var counTree = $('.tree-count').val()*10;
+      var counTree = $('.tree-count').val();
       var diameter = +$( ".diameter-size" ).val();
-      var checkbox = $( '.form input:checked' ).length;
-      checkbox *= 2;
-      var count = counTree + diameter + checkbox;
+
+      if($("#curtains").prop('checked')) {
+         switch (diameter) {
+             case 200:
+               diameter = 1600;
+               break;
+
+            case 500:
+               diameter = 3900;
+               break;
+
+            case 800:
+               diameter = 6500;
+               break;
+
+            case 1400:
+               diameter = 8500;
+               break;
+
+            case 2000:
+               diameter = 10000;
+               break;
+         }
+      }
+
+
+      var count = counTree * diameter;
+      if($("#ch-3").prop('checked')) count += counTree*500;
+      if($("#ch-8").prop('checked')) count += counTree*500;
+      if($("#ch-4").prop('checked')) count += 16500;
+      if($("#ch-5").prop('checked')) count += 12000;
+      if($("#ch-9").prop('checked')) count += 7000;
+      if($("#ch-2").prop('checked')) count += 12000;
+      if($("#wire").prop('checked')) count += 12000;
+      if($("#ch-7").prop('checked')) count += 12000;
+      if($("#ch-10").prop('checked')) count += count/2;
+      if(count < 7000) count = 7000;
 
       $(".form-size-i").html(count+" РУБЛЕЙ");
-
-      console.log(checkbox);
    });
 
    //services
