@@ -1860,4 +1860,13 @@ and (orientation: landscape) {
 		height: 60vw;
 	}
 }
+
+@media (max-width: 330px) {
+	.header {
+		height: 140vw;
+	}
+	.wrapper-checkbox {
+		font-size: 1.4vw;
+	}
+}
 /* end media */
