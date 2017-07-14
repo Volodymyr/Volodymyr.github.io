@@ -1534,6 +1534,15 @@ input[type="checkbox"]:checked + label::before {
 /* end sec-16 */
 
 /* media */
+@media only screen
+and (min-width: 1800px)
+and (max-width: 1922px){
+	.wrapper-left-men,
+	.wrapper-right-men {
+		height: 800px;
+	}
+}
+
 @media (max-width: 1290px) {
 	.wrapper-left-men,
 	.wrapper-right-men {
