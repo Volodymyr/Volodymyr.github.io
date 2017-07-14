@@ -1747,6 +1747,11 @@ input[type="checkbox"]:checked + label::before {
 		width: 46%;
 		padding: 1px;
 	}
+
+	.wrapper-left-men,
+	.wrapper-right-men {
+		height: 35%;
+	}
 }
 
 @media only screen
@@ -1849,7 +1854,7 @@ and (orientation: landscape) {
 
 	.wrapper-left-men,
 	.wrapper-right-men {
-		height: 250px;
+		height: 35%;
 	}
 
 	.sec-14 {
