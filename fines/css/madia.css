@@ -1,3 +1,18 @@
+@media (max-width: 1500px) {
+	.form td:first-child {
+		font-size: 1em;
+	}
+
+	.form input {
+		padding: 4.2% 3%;
+		font-size: .4em;
+	}
+
+	.form .btn_primary {
+		font-size: .8em;
+	}
+}
+
 @media (max-width: 1040px) {
 	.warning {
 		font-size: 90%;
