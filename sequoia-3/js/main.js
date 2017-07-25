@@ -49,43 +49,43 @@ $(function() {
 
       if($("#curtains").prop('checked')) {
          switch (diameter) {
-             case 200:
-               diameter = 1600;
-               break;
+           case 200:
+           diameter = 1600;
+           break;
 
-            case 500:
-               diameter = 3900;
-               break;
+           case 500:
+           diameter = 3900;
+           break;
 
-            case 800:
-               diameter = 6500;
-               break;
+           case 800:
+           diameter = 6500;
+           break;
 
-            case 1400:
-               diameter = 8500;
-               break;
+           case 1400:
+           diameter = 8500;
+           break;
 
-            case 2000:
-               diameter = 10000;
-               break;
-         }
-      }
+           case 2000:
+           diameter = 10000;
+           break;
+        }
+     }
 
 
-      var count = counTree * diameter;
-      if($("#ch-3").prop('checked')) count += counTree*500;
-      if($("#ch-8").prop('checked')) count += counTree*500;
-      if($("#ch-4").prop('checked')) count += 16500;
-      if($("#ch-5").prop('checked')) count += 12000;
-      if($("#ch-9").prop('checked')) count += 7000;
-      if($("#ch-2").prop('checked')) count += 12000;
-      if($("#wire").prop('checked')) count += 12000;
-      if($("#ch-7").prop('checked')) count += 12000;
-      if($("#ch-10").prop('checked')) count += count/2;
-      if(count < 7000) count = 7000;
+     var count = counTree * diameter;
+     if($("#ch-3").prop('checked')) count += counTree*500;
+     if($("#ch-8").prop('checked')) count += counTree*500;
+     if($("#ch-4").prop('checked')) count += 16500;
+     if($("#ch-5").prop('checked')) count += 12000;
+     if($("#ch-9").prop('checked')) count += 7000;
+     if($("#ch-2").prop('checked')) count += 12000;
+     if($("#wire").prop('checked')) count += 12000;
+     if($("#ch-7").prop('checked')) count += 12000;
+     if($("#ch-10").prop('checked')) count += count/2;
+     if(count < 7000) count = 7000;
 
-      $(".form-size-i").html(count+" РУБЛЕЙ");
-   });
+     $(".form-size-i").html(count+" РУБЛЕЙ");
+  });
 
    //services
    $(".services-price").click(function() {
@@ -169,6 +169,15 @@ $(function() {
       $(".show-form").show('slow');
    });
 
+   $(".open-popap-z").click(function() {
+      $(".popup-z").show('slow');
+   });
+
+   $(".open-popap-u").click(function() {
+      $(".popup-u").show('slow');
+      titelBlock = $(this).parent(".services-item").children("h2").html();
+   });
+
    $(".form").click(function() {
       event.stopPropagation();
    });
@@ -196,7 +205,7 @@ $(function() {
    $(".slider li").on("click", function(){
       var widthLi = $(".slider li").outerWidth(true);
       var item = $(this),
-      pos = "-"+(item.index() * widthLi)+1%+"px";
+      pos = "-"+(item.index() * widthLi)+"px";
 
       item.addClass("active");
       item.siblings().removeClass("active");
@@ -247,25 +256,84 @@ $(function() {
    });
 
 // carousel
-   $('.carousel').carousel();
+$('.carousel').carousel();
 
-   $('.item-men img').click(function() {
-      var cl = $(this).data("cl");
+$('.item-men img').click(function() {
+   var cl = $(this).data("cl");
 
-       $(this).parent(".item-men").animate( {left: "-500px" },500 , function() {
+   $(this).parent(".item-men").animate( {left: "-500px" },500 , function() {
 
 
-         $(".description-men .active-men").removeClass('active-men');
-         $("."+cl+"").addClass('active-men');
+      $(".description-men .active-men").removeClass('active-men');
+      $("."+cl+"").addClass('active-men');
 
-         $(".wrapper-man-i img").attr('src', './images/sec-16/'+cl+'.png');
+      $(".wrapper-man-i img").attr('src', './images/sec-16/'+cl+'.png');
 
-         $(".line-men .active-man").appendTo(".list-man").removeClass('active-man');
-         $(this).addClass('active-man');
-         $(".line-men .active-man").animate( {left: "0px" },0);
-         $(".line-men .item-men").animate( {left: "0px" },0);
+      $(".line-men .active-man").appendTo(".list-man").removeClass('active-man');
+      $(this).addClass('active-man');
+      $(".line-men .active-man").animate( {left: "0px" },0);
+      $(".line-men .item-men").animate( {left: "0px" },0);
+   });
+
+});
+
+   // ajax
+   var titelBlock;
+   $(".form").submit(function() {
+      var form_data = $(".form").serialize();
+      var man =[];
+
+      $('.team-active').each(function() {
+         man.push($(this).text());
       });
 
+      man = man.join(', ');
+
+      form_data += '&size='+$(".form-size-i").html()+'&name='+$('input[name=name]').val()+'&usrtel='+$('input[name=usrtel]').val()+'&man='+man;
+      $.ajax({
+         type: "POST",
+         url: "res.php",
+         data: form_data,
+         error: function (request, error) {},
+         success: function() {
+            $(".popup").hide();
+         }
+      });
+      return false;
    });
+
+   $(".popap-form-u").submit(function() {
+      var form_data = $(this).serialize();
+      form_data += '&titelBlock='+titelBlock;
+      $.ajax({
+         type: "POST",
+         url: "res-2.php",
+         data: form_data,
+         error: function (request, error) {
+            console.log('er');
+         },
+         success: function() {
+            $(".popup").hide();
+         }
+      });
+      return false;
+   });
+
+   $(".popap-form-z").submit(function() {
+      var form_data = $(this).serialize();
+      $.ajax({
+         type: "POST",
+         url: "res-3.php",
+         data: form_data,
+         error: function (request, error) {
+            console.log("error");
+         },
+         success: function() {
+            console.log("s");
+         }
+      });
+      return false;
+   });
+
 
 });

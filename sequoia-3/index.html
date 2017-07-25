@@ -45,7 +45,7 @@
 					</p>
 					<p class="diameter">
 						<label>СРЕДНИЙ ДИАМЕТР (см)</label>
-						<select class="diameter-size">
+						<select class="diameter-size" name="diameter-size">
 							<option></option>
 							<option value="200">20</option>
 							<option value="500">40</option>
@@ -58,55 +58,55 @@
 					<div class="wrapper-checkbox">
 						<div class="ch-left">
 							<p>
-								<input type="checkbox" name="curtains" id="curtains" hidden>
+								<input type="checkbox" name="curtains-1" id="curtains" hidden>
 								<label for="curtains"> ТРЕБУЕТСЯ ЗАВЕС</label>
 								<span>контролируемый спуск спиленных частей с <br /> помощью троссовой системы</span>
 							</p>
 
 							<p>
-								<input type="checkbox" name="curtains" id="ch-2" hidden>
+								<input type="checkbox" name="curtains-2" id="ch-2" hidden>
 								<label for="ch-2"> РЯДОМ СТРОЕНИЕ</label>
 							</p>
 
 							<p>
-								<input type="checkbox" name="curtains" id="ch-3" hidden>
+								<input type="checkbox" name="curtains-3" id="ch-3" hidden>
 								<label for="ch-3"> РАСПИЛ НА ДРОВА</label>
 							</p>
 
 							<p>
-								<input type="checkbox" name="curtains" id="ch-4" hidden>
+								<input type="checkbox" name="curtains-4" id="ch-4" hidden>
 								<label for="ch-4"> ПЕРЕРАБОТКА В ЩЕПУ</label>
 							</p>
 
 							<p>
-								<input type="checkbox" name="curtains" id="ch-5" hidden>
+								<input type="checkbox" name="curtains-5" id="ch-5" hidden>
 								<label for="ch-5"> СУХОЕ ДЕРЕВО</label>
 							</p>
 						</div>
 
 						<div class="ch-right">
 							<p>
-								<input type="checkbox" name="curtains" id="wire" hidden>
+								<input type="checkbox" name="curtains-6" id="wire" hidden>
 								<label for="wire"> РЯДОМ ПРОВОДА</label>
 							</p>
 
 							<p>
-								<input type="checkbox" name="curtains" id="ch-7" hidden>
+								<input type="checkbox" name="curtains-7" id="ch-7" hidden>
 								<label for="ch-7"> РЯДОМ ЗАБОР</label>
 							</p>
 
 							<p>
-								<input type="checkbox" name="curtains" id="ch-8" hidden>
+								<input type="checkbox" name="curtains-8" id="ch-8" hidden>
 								<label for="ch-8"> РАСПИЛ НА ЭЛЕМЕНТЫ</label>
 							</p>
 
 							<p>
-								<input type="checkbox" name="curtains" id="ch-9" hidden>
+								<input type="checkbox" name="curtains-9" id="ch-9" hidden>
 								<label for="ch-9"> ТРЕБУЕТСЯ ВЫВОЗ</label>
 							</p>
 
 							<p>
-								<input type="checkbox" name="curtains" id="ch-10" hidden>
+								<input type="checkbox" name="curtains-10" id="ch-10" hidden>
 								<label for="ch-10"> ВЫЗВОВ НА СЕГОДНЯ</label>
 							</p>
 						</div>
@@ -124,7 +124,7 @@
 					</div>
 
 					<p class="form-size">СТОИМОСТЬ <span class="form-size-i">0 РУБЛЕЙ</span></p>
-					<p class="form-submit open-popap"><input type="submit" value="ЗАКАЗАТЬ"></p>
+					<p class="form-submit open-popap"><span>ЗАКАЗАТЬ</span></p>
 				</form>
 			</div>
 
@@ -231,23 +231,47 @@
 
 					</div>
 					<div class="services-price">цены</div>
-					<div class="order open-popap">ЗАКАЗАТЬ</div>
+					<div class="order open-popap-u">ЗАКАЗАТЬ</div>
 				</div>
 				<div class="price">
-					<h3>Диаметр дерева :</h3>
-					<p class="sec-3-price">цена за шт</p>
-					<p>До 20см - 200 рублей</p>
-					<p>До 40см - 500 рублей</p>
-					<p>До 60см - 800 рублей</p>
-					<p>До 80см - 1400 рублей</p>
-					<p>100см и больше - 2000 рублей</p>
-					<p>требуется актовышка - от 16 000 смена</p>
-					<p>требуется актокран - от 12 000 смена</p>
-					<p>80 см - 800 рублей</p>
-					<p>90 см - 900 рублей</p>
+					<div class="services-all services-txt services-a-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 200 рублей</p>
+						<p>До 40см - 500 рублей</p>
+						<p>До 60см - 800 рублей</p>
+						<p>До 80см - 1400 рублей</p>
+						<p>100см и больше - 2000 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 
-					<p class="price-tower price-tower-1">требуется актовышка - от 16 000 смена</p>
-					<p class="price-tower">требуется актокран  - от 12 000 смена</p>
+					<div class="services-safecom services-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 1600 рублей</p>
+						<p>До 40см - 3900 рублей</p>
+						<p>До 60см - 6500 рублей</p>
+						<p>До 80см -  8500  рублей</p>
+						<p>100см и больше - 10000 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
+
+					<div class="services-parts services-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 1100 рублей</p>
+						<p>До 40см - 3000 рублей</p>
+						<p>До 60см - 4500 рублей</p>
+						<p>До 80см - 6000  рублей</p>
+						<p>100см и больше - 8000 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 				</div>
 			</section>
 			<!-- end sec-3 -->
@@ -289,23 +313,47 @@
 
 					</div>
 					<div class="services-price">цены</div>
-					<div class="order open-popap">ЗАКАЗАТЬ</div>
+					<div class="order open-popap-u">ЗАКАЗАТЬ</div>
 				</div>
 				<div class="price">
-					<h3>Диаметр дерева :</h3>
-					<p class="sec-3-price">цена за шт</p>
-					<p>10 см - 100 рублей</p>
-					<p>20 см - 200 рублей</p>
-					<p>30 см - 300 рублей</p>
-					<p>40 см - 400 рублей</p>
-					<p>50 см - 500 рублей</p>
-					<p>60 см - 600 рублей</p>
-					<p>70 см - 700 рублей</p>
-					<p>80 см - 800 рублей</p>
-					<p>90 см - 900 рублей</p>
+					<div class="services-all services-txt services-a-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 1300 рублей</p>
+						<p>До 40см - 3400 рублей</p>
+						<p>До 60см - 5000 рублей</p>
+						<p>До 80см - 7000 рублей</p>
+						<p>100см и больше - 9500 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 
-					<p class="price-tower price-tower-1">требуется актовышка - от 16 000 смена</p>
-					<p class="price-tower">требуется актокран  - от 12 000 смена</p>
+					<div class="services-parts services-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 500 рублей</p>
+						<p>До 40см - 800 рублей</p>
+						<p>До 60см - 1200 рублей</p>
+						<p>До 80см -  2500  рублей</p>
+						<p>100см и больше - 5000 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
+
+					<div class="services-safecom services-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 1200 рублей</p>
+						<p>До 40см - 2500 рублей</p>
+						<p>До 60см - 4500 рублей</p>
+						<p>До 80см - договорная</p>
+						<p>100см и больше - договорная</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 				</div>
 			</section>
 			<!-- end sec-4 -->
@@ -335,23 +383,27 @@
 
 					</div>
 					<div class="services-price">цены</div>
-					<div class="order open-popap">ЗАКАЗАТЬ</div>
+					<div class="order open-popap-u">ЗАКАЗАТЬ</div>
 				</div>
 				<div class="price">
-					<h3>Диаметр дерева :</h3>
-					<p class="sec-3-price">цена за шт</p>
-					<p>10 см - 100 рублей</p>
-					<p>20 см - 200 рублей</p>
-					<p>30 см - 300 рублей</p>
-					<p>40 см - 400 рублей</p>
-					<p>50 см - 500 рублей</p>
-					<p>60 см - 600 рублей</p>
-					<p>70 см - 700 рублей</p>
-					<p>80 см - 800 рублей</p>
-					<p>90 см - 900 рублей</p>
+					<div class="services-all services-txt services-a-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 600 рублей</p>
+						<p>До 40см - 1000 рублей</p>
+						<p>До 60см - 1600 рублей</p>
+						<p>До 80см - 2500 рублей</p>
+						<p>100см и больше - 3500 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 3000 рублей</p>
+					</div>
 
-					<p class="price-tower price-tower-1">требуется актовышка - от 16 000 смена</p>
-					<p class="price-tower">требуется актокран  - от 12 000 смена</p>
+					<div class="services-parts services-txt">
+						<p>1 смена (7+1 часов) </p>
+						<p>10 000 рублей</p>
+						<p>Минимальный заказ 10 000 рублей.</p>
+					</div>
 				</div>
 			</section>
 			<!-- end sec-5 -->
@@ -376,7 +428,7 @@
 
 					</div>
 					<div class="services-price">цены</div>
-					<div class="order open-popap">ЗАКАЗАТЬ</div>
+					<div class="order open-popap-u">ЗАКАЗАТЬ</div>
 				</div>
 				<div class="price">
 					<h3>Диаметр дерева :</h3>
@@ -420,23 +472,37 @@
 
 					</div>
 					<div class="services-price">цены</div>
-					<div class="order open-popap">ЗАКАЗАТЬ</div>
+					<div class="order open-popap-u">ЗАКАЗАТЬ</div>
 				</div>
 				<div class="price">
-					<h3>Диаметр дерева :</h3>
-					<p class="sec-3-price">цена за шт</p>
-					<p>10 см - 100 рублей</p>
-					<p>20 см - 200 рублей</p>
-					<p>30 см - 300 рублей</p>
-					<p>40 см - 400 рублей</p>
-					<p>50 см - 500 рублей</p>
-					<p>60 см - 600 рублей</p>
-					<p>70 см - 700 рублей</p>
-					<p>80 см - 800 рублей</p>
-					<p>90 см - 900 рублей</p>
+					<div class="services-all services-txt services-a-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 1500 рублей</p>
+						<p>До 40см - 2600 рублей</p>
+						<p>До 60см и больше - договорная</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 
-					<p class="price-tower price-tower-1">требуется актовышка - от 16 000 смена</p>
-					<p class="price-tower">требуется актокран  - от 12 000 смена</p>
+					<div class="services-parts services-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 2000 рублей</p>
+						<p>До 40см - 2000 рублей</p>
+						<p>До 60см - 3000 рублей</p>
+						<p>До 80см - 5000 рублей</p>
+						<p>100см и больше - 5000 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 3000 рублей</p>
+					</div>
+
+					<div class="services-safecom services-txt">
+						<p>700 рублей за 1 дерево</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 				</div>
 			</section>
 			<!-- end sec-7 -->
@@ -461,23 +527,27 @@
 
 					</div>
 					<div class="services-price">цены</div>
-					<div class="order open-popap">ЗАКАЗАТЬ</div>
+					<div class="order open-popap-u">ЗАКАЗАТЬ</div>
 				</div>
 				<div class="price">
-					<h3>Диаметр дерева :</h3>
-					<p class="sec-3-price">цена за шт</p>
-					<p>10 см - 100 рублей</p>
-					<p>20 см - 200 рублей</p>
-					<p>30 см - 300 рублей</p>
-					<p>40 см - 400 рублей</p>
-					<p>50 см - 500 рублей</p>
-					<p>60 см - 600 рублей</p>
-					<p>70 см - 700 рублей</p>
-					<p>80 см - 800 рублей</p>
-					<p>90 см - 900 рублей</p>
+					<div class="services-parts services-txt services-a-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 3000 рублей</p>
+						<p>До 40см - 5000 рублей</p>
+						<p>До 60см - 6000 рублей</p>
+						<p>До 80см – 8000 рублей</p>
+						<p>100см и больше – 10000 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 
-					<p class="price-tower price-tower-1">требуется актовышка - от 16 000 смена</p>
-					<p class="price-tower">требуется актокран  - от 12 000 смена</p>
+					<div class="services-all services-txt">
+						<p>До 10 деревьев – 6 000 рублей</p>
+						<p>Более 10 деревьев 400 рублей/дерево</p>
+						<p>Минимальный заказ 6000 рублей</p>
+					</div>
 				</div>
 			</section>
 			<!-- end sec-8 -->
@@ -488,16 +558,13 @@
 					<h2>КАБЛИНГ ДЕРЕВЬЕВ</h2>
 					<div class="services-item-description">
 						<ul class="services-tabs">
-							<li class="services-all services-tab active-tab" data-image="url(./images/sec-all/01.png) no-repeat center" data-cl="services-all">КАБЛИНГ</li>
-							<li class="services-parts services-tab" data-image="url(./images/sec-all/03.png) no-repeat center" data-cl="services-parts">СТАТИЧЕСКАЯ СИСТЕМА</li>
-							<li class="services-safecom services-tab" data-image="url(./images/sec-all/02.png) no-repeat center" data-cl="services-safecom">ДАНАМИЧЕСКАЯ СИСТЕМА</li>
+							<li class="services-all services-tab active-tab" data-image="url(./images/sec-all/01.png) no-repeat center" data-cl="services-all">СТАТИЧЕСКАЯ СИСТЕМА</li>
+							<li class="services-parts services-tab" data-image="url(./images/sec-all/03.png) no-repeat center" data-cl="services-parts">ДАНАМИЧЕСКАЯ СИСТЕМА</li>
 						</ul>
 
-						<p class="services-all services-a-txt services-txt">Укрепление деревьев или ветвей для предупреждения падения поврежденных фрагментов или всего дерева целиком с использованием веревок, стальных тросов или специальной динамической системы «кобра».</p>
+						<p class="services-all services-txt">Для фиксации используется стальной трос. Для крепления к стволу используется крюк – саморез. Прочная и надежная система, но плохо подходит при динамической (ветровой) нагрузке.</p>
 
-						<p class="services-parts services-txt">Для фиксации используется стальной трос. Для крепления к стволу используется крюк – саморез. Прочная и надежная система, но плохо подходит при динамической (ветровой) нагрузке.</p>
-
-						<p class="services-safecom services-txt">Для фиксации используется синтетическая эластичная веревка или рукав. В месте, где этот рукав охватывает ствол, в него вставляется расширитель чтобы распределить нагрузку и не повредить кору. "Кобра" вступает в работу только когда отклонение ствола от нейтрали превышает какой-то предел, поэтому система подходит для фиксации при динамических нагрузках.</p>
+						<p class="services-parts services-txt">Для фиксации используется синтетическая эластичная веревка или рукав. В месте, где этот рукав охватывает ствол, в него вставляется расширитель чтобы распределить нагрузку и не повредить кору. "Кобра" вступает в работу только когда отклонение ствола от нейтрали превышает какой-то предел, поэтому система подходит для фиксации при динамических нагрузках.</p>
 
 						<div class="services-video">
 							<iframe src="https://www.youtube.com/embed/PhBG2FcK5jo" frameborder="0" allowfullscreen></iframe>
@@ -505,23 +572,32 @@
 
 					</div>
 					<div class="services-price">цены</div>
-					<div class="order open-popap">ЗАКАЗАТЬ</div>
+					<div class="order open-popap-u">ЗАКАЗАТЬ</div>
 				</div>
 				<div class="price">
-					<h3>Диаметр дерева :</h3>
-					<p class="sec-3-price">цена за шт</p>
-					<p>10 см - 100 рублей</p>
-					<p>20 см - 200 рублей</p>
-					<p>30 см - 300 рублей</p>
-					<p>40 см - 400 рублей</p>
-					<p>50 см - 500 рублей</p>
-					<p>60 см - 600 рублей</p>
-					<p>70 см - 700 рублей</p>
-					<p>80 см - 800 рублей</p>
-					<p>90 см - 900 рублей</p>
+					<div class="services-parts services-txt services-a-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 20см - 3000 рублей</p>
+						<p>До 40см - 5000 рублей</p>
+						<p>До 60см - 7000 рублей</p>
+						<p>До 80см – 8000 рублей</p>
+						<p>100см и больше – 10000 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 
-					<p class="price-tower price-tower-1">требуется актовышка - от 16 000 смена</p>
-					<p class="price-tower">требуется актокран  - от 12 000 смена</p>
+					<div class="services-all services-txt">
+						<p>До 20см - 2000 рублей</p>
+						<p>До 40см - 3000 рублей</p>
+						<p>До 60см - 5000 рублей</p>
+						<p>До 80см – 6000 рублей</p>
+						<p>100см и больше – 7000 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 				</div>
 			</section>
 			<!-- end sec-9 -->
@@ -539,23 +615,20 @@
 
 					</div>
 					<div class="services-price">цены</div>
-					<div class="order open-popap">ЗАКАЗАТЬ</div>
+					<div class="order open-popap-u">ЗАКАЗАТЬ</div>
 				</div>
 				<div class="price">
-					<h3>Диаметр дерева :</h3>
-					<p class="sec-3-price">цена за шт</p>
-					<p>10 см - 100 рублей</p>
-					<p>20 см - 200 рублей</p>
-					<p>30 см - 300 рублей</p>
-					<p>40 см - 400 рублей</p>
-					<p>50 см - 500 рублей</p>
-					<p>60 см - 600 рублей</p>
-					<p>70 см - 700 рублей</p>
-					<p>80 см - 800 рублей</p>
-					<p>90 см - 900 рублей</p>
-
-					<p class="price-tower price-tower-1">требуется актовышка - от 16 000 смена</p>
-					<p class="price-tower">требуется актокран  - от 12 000 смена</p>
+					<div class="services-parts services-txt services-a-txt">
+						<h3>Диаметр дерева :</h3>
+						<p class="sec-3-price">цена за шт</p>
+						<p>До 40см - 1000 рублей</p>
+						<p>До 60см - 2500 рублей</p>
+						<p>До 80см – 3600 рублей</p>
+						<p>100см и больше – 4800 рублей</p>
+						<p>требуется актовышка - от 16 000 смена</p>
+						<p>требуется актокран - от 12 000 смена</p>
+						<p>Минимальный заказ 12 000 рублей</p>
+					</div>
 				</div>
 			</section>
 			<!-- end sec-10 -->
@@ -575,23 +648,15 @@
 
 						</div>
 						<div class="services-price">цены</div>
-						<div class="order open-popap">ЗАКАЗАТЬ</div>
+						<div class="order open-popap-u">ЗАКАЗАТЬ</div>
 					</div>
 					<div class="price">
-						<h3>Диаметр дерева :</h3>
-						<p class="sec-3-price">цена за шт</p>
-						<p>10 см - 100 рублей</p>
-						<p>20 см - 200 рублей</p>
-						<p>30 см - 300 рублей</p>
-						<p>40 см - 400 рублей</p>
-						<p>50 см - 500 рублей</p>
-						<p>60 см - 600 рублей</p>
-						<p>70 см - 700 рублей</p>
-						<p>80 см - 800 рублей</p>
-						<p>90 см - 900 рублей</p>
-
-						<p class="price-tower price-tower-1">требуется актовышка - от 16 000 смена</p>
-						<p class="price-tower">требуется актокран  - от 12 000 смена</p>
+						<p>На полигон ТБО:</p>
+						<p>7000/пухто 12(14) м3</p>
+						<p>10000/пухто 27м3</p>
+						<br/><br/>
+						<p>По адресу</p>
+						<p>цена договорная</p>
 					</div>
 				</section>
 				<!-- end sec-11 -->
@@ -642,7 +707,9 @@
 								<img class="sl-img" src="./images/sec-14/1/9.jpg" alt="img" />
 								<div class="slider-description">
 									<h3>Г. Санкт-Петербург , Невский район </h3>
-									<p>Заказ: спилить Сухой Граб, Кронировать Тополь, и обрезать 2 засохших ветки у Липы , не задев: машины , дом, окна, постамент, навес, и распилить на небольшие части.</p>
+									<p>-формовочная обрезка, 54 дерева</p>
+									<p>-санитарная обрезка, 28 деревьев</p>
+									<p>-лечение, 33 дерева</p>
 								</div>
 								<div class="count-img">
 									<span class="index-img">1</span>/<span class="cou-img">1</span>
@@ -661,7 +728,9 @@
 								<img class="sl-img" src="./images/sec-14/2/10.jpg" alt="img" />
 								<div class="slider-description">
 									<h3>Дворец Меншикова</h3>
-									<p>Заказ : Фигурная обрезка +вырезка сухих веток + обработка "садовым варом"!</p>
+									<p>-формовочная обрезка, 36 деревьев</p>
+									<p>-санитарная, 7 деревьев</p>
+									<p>-лечение, 14 деревьев</p>
 								</div>
 								<div class="count-img">
 									<span class="index-img">1</span>/<span class="cou-img">1</span>
@@ -677,7 +746,9 @@
 								<img class="sl-img" src="./images/sec-14/3/7.jpg" alt="img" />
 								<div class="slider-description">
 									<h3>Ленинградская область , Зеленогорский район, Рощино</h3>
-									<p>Заказ: выполнить обрезку сухих веток , и сбрасывать ветки в спец. Отведенное место. большие сучки обработать искусственной корой , на одном дереве (находящемся на стыке 2х участков) обрезать ветки и с завешиванием на веревке спустить их на землю. Всего 13 сосен. Задача выполнена , затраченное время 6часов </p>
+									<p>-удаление целиком, 28 деревьев</p>
+									<p>-удаление частями, 34 деревьев</p>
+									<p>-удаление с завесом, 25 деревьев</p>
 								</div>
 								<div class="count-img">
 									<span class="index-img">1</span>/<span class="cou-img">1</span>
@@ -690,7 +761,9 @@
 								<img class="sl-img" src="./images/sec-14/4/4.jpg" alt="img" />
 								<div class="slider-description">
 									<h3>Ленинградская область , приозерский район , СНТ Золотой колос</h3>
-									<p>Заказ: обрезать березу на уровне проводов, не задев , дом, забор, провода, водопровод. Задача выполнена , затраченное время 50 минут,</p>
+									<p>-санитарная обрезка, 39 деревьев</p>
+									<p>-удаление целиком, 4 дерева</p>
+									<p>-удаление частями, 6 деревьев</p>
 								</div>
 								<div class="count-img">
 									<span class="index-img">1</span>/<span class="cou-img">1</span>
@@ -705,13 +778,8 @@
 								<img class="sl-img" src="./images/sec-14/5/6.jpg" alt="img" />
 								<div class="slider-description">
 									<h3>Ленинградская область , приозерский р-н</h3>
-									<p>Заказ : Выполнить формовочную обрезку еловой изгороди (квадратом) 
-
-Погодные условия : Солнце .
-
-Время выполнения работ : утро , день . 
-
-Задача выполнена: Затраченное время 2 часов 10 минут </p>
+									<p>-удаление частями, 4 дерева</p>
+									<p>-удаление с завесом, 14 деревьев</p>
 								</div>
 								<div class="count-img">
 									<span class="index-img">1</span>/<span class="cou-img">1</span>
@@ -723,7 +791,9 @@
 								<img class="sl-img" src="./images/sec-14/6/3.jpg" alt="img" />
 								<div class="slider-description">
 									<h3>Ленинградская область ,Всеволожский район, Садоводства</h3>
-									<p>Заказ: спилить березу по частям , не задев : забор 2 шт, провода, строения в виде дома, бани, сарая, гаража ., распилить по частям и сложить в кучу !</p>
+									<p>-формовочная обрезка, 36 деревьев</p>
+									<p>-санитарная, 7 деревьев</p>
+									<p>-лечение, 14 деревьев</p>
 								</div>
 								<div class="count-img">
 									<span class="index-img">1</span>/<span class="cou-img">1</span>
@@ -739,26 +809,9 @@
 								<img class="sl-img" src="./images/sec-14/7/7.jpg" alt="img" />
 								<div class="slider-description">
 									<h3>Ленинградская область, приморский р-н , Пески</h3>
-									<p>Ленинградская область, приморский р-н 
-"Пески"
-
-Заказ : 
-
-Удалить по частям с Завешиванием всех спиливаемых частей 2 Шт. "Ольхи" , диаметр 50-60см
-
-Не задев :
-Провода, дом,хоз.блок, забор, кустарник, газон, другие Деревья, 
-
-И распилить на мелкие части для последующей колки дров 
-
-Погодные условия : 
-Умеренный Ветер , солнце .
-
-Время выполнения работ : 
-утро , день .
-
-Задача выполнена:
-Затраченное время 4часа 15минут </p>
+									<p>-санитарная обрезка, 39 деревьев</p>
+									<p>-удаление целиком, 4 дерева</p>
+									<p>-удаление частями, 6 деревьев</p>
 								</div>
 								<div class="count-img">
 									<span class="index-img">1</span>/<span class="cou-img">1</span>
@@ -776,32 +829,9 @@
 								<img class="sl-img" src="./images/sec-14/8/9.jpg" alt="img" />
 								<div class="slider-description">
 									<h3>Санкт-Петербург , выборгский р-н ! Озерки</h3>
-									<p>Заказ : 
-Удалить по частям "осину" , диаметр 40-50см
-
-Удалить по частям "Тополь" , диаметр 50-60см
-
-Удалить по частям "Тополь" , диаметр 40-50см
-
-Удалить по частям 2 шт. "Тополь" , диаметр 60-70см
-
-Срезать все Ветки свисающие над домом , У 6 шт. Деревьев 
-
-Примялся АГП ( автогидроподъёмник) 
-
-Не задев :
-Провода, дом(2 Шт). , баню, хоз.блок, забор, кустарник.
-
-И распилить на мелкие части для последующей колки дров 
-
-Погодные условия : 
-Умеренный Ветер , солнце .
-
-Время выполнения работ : 
-утро , день .
-
-Задача выполнена:
-Затраченное время 6часов 25минут </p>
+									<p>-формовочная обрезка, 31 деревьев</p>
+									<p>-санитарная, 7 деревьев</p>
+									<p>-лечение, 11 деревьев</p>
 								</div>
 								<div class="count-img">
 									<span class="index-img">1</span>/<span class="cou-img">1</span>
@@ -820,7 +850,7 @@
 						<p>Закажите срочный выезд сотрудников для оперативного удаления аварийного дерева.</p>
 						<p class="sec-15-last">Работаем 24 часа в сутки.</p>
 					</div>
-					<div class="sec-15-btn open-popap">
+					<div class="sec-15-btn open-popap-z">
 						<span>ВЫЗВАТЬ</span>
 					</div>
 					<img class="sec-15-men" src="./images/man/sec-15-men.png" alt="men">
@@ -985,7 +1015,7 @@
 					<div class="footer-top">
 						<p class="f-phone">телефон<br/>+ 7 921 877 44 87</p>
 						<p class="f-mail">почта<br/>stremwork@gmail.com</p>
-						<p class="sec-19-btn open-popap">
+						<p class="sec-19-btn open-popap-z">
 							<span>ЗВОНОК</span>
 						</p>
 					</div>
@@ -1009,6 +1039,30 @@
 			<div class="popup show-form">
 				<div class="wrapper-popap">
 					<form class="popap-form form" method="post">
+						<p><input type="text" name="name" placeholder="Ф.И.О" required></p>
+						<p><input type="tel" name="usrtel" pattern="[\+]7[ 0-9]+$" placeholder="Телефон" required></p>
+						<div class="g-recaptcha" data-sitekey="6Le25SQUAAAAAGN7O0CdWx6ZQJlZ7wcnZnmN7n2B"></div>
+						<p class="wrapper-submit popup-show"><input type="submit" value="ЗАКАЗАТЬ" class="submit-popap"></p>
+					</form>
+					<p class="clouse-popup"></p>
+				</div>
+			</div>
+
+			<div class="popup popup-u">
+				<div class="wrapper-popap">
+					<form class="popap-form popap-form-u" method="post">
+						<p><input type="text" name="name" placeholder="Ф.И.О" required></p>
+						<p><input type="tel" name="usrtel" pattern="[\+]7[ 0-9]+$" placeholder="Телефон" required></p>
+						<div class="g-recaptcha" data-sitekey="6Le25SQUAAAAAGN7O0CdWx6ZQJlZ7wcnZnmN7n2B"></div>
+						<p class="wrapper-submit popup-show"><input type="submit" value="ЗАКАЗАТЬ" class="submit-popap"></p>
+					</form>
+					<p class="clouse-popup"></p>
+				</div>
+			</div>
+
+			<div class="popup popup-z">
+				<div class="wrapper-popap">
+					<form class="popap-form form popap-form-z" method="post">
 						<p><input type="text" name="name" placeholder="Ф.И.О" required></p>
 						<p><input type="tel" name="usrtel" pattern="[\+]7[ 0-9]+$" placeholder="Телефон" required></p>
 						<div class="g-recaptcha" data-sitekey="6Le25SQUAAAAAGN7O0CdWx6ZQJlZ7wcnZnmN7n2B"></div>
