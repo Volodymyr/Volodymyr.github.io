@@ -791,6 +791,11 @@ input[type="checkbox"]:checked + label::before {
 	background-size: 22%;
 }
 
+.services-price-act {
+	background: url(../images/arrow-2-h.png) no-repeat left bottom;
+	background-size: 22%;
+}
+
 .services-left .services-price {
 	left: 66%;
 	text-align: left;
@@ -799,6 +804,11 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .services-left .services-price:hover {
+	background: url(../images/arrow-2-left-h.png) no-repeat right bottom;
+	background-size: 22%;
+}
+
+.services-left .services-price-act {
 	background: url(../images/arrow-2-left-h.png) no-repeat right bottom;
 	background-size: 22%;
 }
@@ -1588,15 +1598,6 @@ input[type="checkbox"]:checked + label::before {
 /* end sec-16 */
 
 /* media */
-/*@media only screen
-and (min-width: 1800px)
-and (max-width: 1922px){
-	.wrapper-left-men,
-	.wrapper-right-men {
-		height: 800px;
-	}
-	}*/
-
 	@media (max-width: 1290px) {
 		.wrapper-form {
 			width: 37.87%;
@@ -1844,7 +1845,7 @@ and (max-width: 1922px){
 	and (max-height: 768px){
 		.wrapper-right-men,
 		.wrapper-left-men {
-			height: 75%;
+			height: 65%;
 		}
 
 		.sec-13-year {
@@ -1864,7 +1865,7 @@ and (max-width: 1922px){
 		}
 
 		.slider li img {
-			max-height: 290px;
+			max-height: 250px;
 		}
 	}
 

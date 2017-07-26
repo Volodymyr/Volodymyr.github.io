@@ -90,8 +90,7 @@ $(function() {
    //services
    $(".services-price").click(function() {
       var perent = $(this).closest("section").find('.price').toggle("slow");
-      console.log($(this).closest("section").find('.price'));
-
+      $(this).toggleClass('services-price-act');
    });
 
    $(".sec-3 .services-tab").click(function() {
