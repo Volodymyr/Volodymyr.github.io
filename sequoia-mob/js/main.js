@@ -1,5 +1,4 @@
 $(function() {
-
    //add man
    $(".add-man").click(function() {
       var man = $(this).data("man");
@@ -60,6 +59,7 @@ $(function() {
    //services
    $(".services-price").click(function() {
       var perent = $(this).closest("section").find('.price').toggle("slow");
+      $(this).toggleClass('services-price-act');
    });
 
    $(".sec-3 .services-tab").click(function() {

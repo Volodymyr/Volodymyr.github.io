@@ -727,12 +727,10 @@ input[type="checkbox"]:checked + label::before {
 }
 
 .services-video {
-	text-align: right;
-	margin-top: 2%;
-	margin-right: 3.5%;
-	bottom: 5%;
 	width: 50%;
-	float: right;
+	position: absolute;
+	bottom: 0;
+	left: 25%;
 }
 
 .services-left .services-video {
@@ -780,6 +778,16 @@ input[type="checkbox"]:checked + label::before {
 	left: 66%;
 	text-align: left;
 	background: url(../images/arrow-2-left.png) no-repeat right bottom;
+	background-size: 22%;
+}
+
+.services-price-act {
+	background: url(../images/arrow-2-h.png) no-repeat left bottom;
+	background-size: 22%;
+}
+
+.services-left .services-price-act {
+	background: url(../images/arrow-2-left-h.png) no-repeat right bottom;
 	background-size: 22%;
 }
 
@@ -1064,12 +1072,12 @@ input[type="checkbox"]:checked + label::before {
 
 .slider .prev {
 	bottom: 10%;
-	left: -5%;
+	left: -13%;
 }
 
 .slider .next {
 	bottom: 10%;
-	right: -5%;
+	right: -8%;
 }
 
 .count-img {
@@ -1624,13 +1632,13 @@ input[type="checkbox"]:checked + label::before {
 		font-size: 2.5vw;
 	}
 	.slider .next {
-		right: -53%;
+		right: -57%;
 	}
 	.sec-12 p {
 		font-size: 4vw;
 	}
 	.sec-12 h3 {
-		font-size: 4vw;
+		font-size: 3.5vw;
 	}
 	.sec-12 div,
 	.sec-12-right {
@@ -1736,6 +1744,8 @@ input[type="checkbox"]:checked + label::before {
 
 	.services-video {
 		width: 90%;
+		left: 4.5%;
+		bottom: -9%;
 	}
 
 	.wrapper-sec-13 {
@@ -1907,6 +1917,10 @@ and (orientation: landscape) {
 	}
 	.wrapper-checkbox {
 		font-size: 1.4vw;
+	}
+
+	.wrapper-left-men, .wrapper-right-men {
+		height: 30%;
 	}
 }
 /* end media */
