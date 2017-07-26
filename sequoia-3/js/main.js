@@ -106,52 +106,42 @@ $(function() {
 
    $(".sec-4 .services-tab").click(function() {
       var cl = $(this).data("cl");
-      var secBg = $(this).data("image")
       $(".sec-4 .services-tab").removeClass('active-tab');
       $(this).addClass('active-tab');
       $(".sec-4 .services-txt").removeClass('services-a-txt');
       $(".sec-4 ."+cl+"").addClass( "services-a-txt" );
-      $(".sec-4").css({"background": secBg, "background-size": "cover"});
    });
 
    $(".sec-5 .services-tab").click(function() {
       var cl = $(this).data("cl");
-      var secBg = $(this).data("image")
       $(".sec-5 .services-tab").removeClass('active-tab');
       $(this).addClass('active-tab');
       $(".sec-5 .services-txt").removeClass('services-a-txt');
       $(".sec-5 ."+cl+"").addClass( "services-a-txt" );
-      $(".sec-5").css({"background": secBg, "background-size": "cover"});
    });
 
    $(".sec-6 .services-tab").click(function() {
       var cl = $(this).data("cl");
-      var secBg = $(this).data("image")
       $(".sec-6 .services-tab").removeClass('active-tab');
       $(this).addClass('active-tab');
       $(".sec-6 .services-txt").removeClass('services-a-txt');
       $(".sec-6 ."+cl+"").addClass( "services-a-txt" );
-      $(".sec-6").css({"background": secBg, "background-size": "cover"});
    });
 
    $(".sec-7 .services-tab").click(function() {
       var cl = $(this).data("cl");
-      var secBg = $(this).data("image")
       $(".sec-7 .services-tab").removeClass('active-tab');
       $(this).addClass('active-tab');
       $(".sec-7 .services-txt").removeClass('services-a-txt');
       $(".sec-7 ."+cl+"").addClass( "services-a-txt" );
-      $(".sec-7").css({"background": secBg, "background-size": "cover"});
    });
 
    $(".sec-8 .services-tab").click(function() {
       var cl = $(this).data("cl");
-      var secBg = $(this).data("image")
       $(".sec-8 .services-tab").removeClass('active-tab');
       $(this).addClass('active-tab');
       $(".sec-8 .services-txt").removeClass('services-a-txt');
       $(".sec-8 ."+cl+"").addClass( "services-a-txt" );
-      $(".sec-8").css({"background": secBg, "background-size": "cover"});
    });
 
    $(".sec-9 .services-tab").click(function() {
@@ -203,7 +193,7 @@ $(function() {
    countImg();
 
    $(".slider li").on("click", function(){
-      var widthLi = $(".slider li").outerWidth(true);
+      var widthLi = $(".slider li.active").outerWidth(true);
       var item = $(this),
       pos = "-"+(item.index() * widthLi)+"px";
 
