@@ -327,16 +327,17 @@ input[type="checkbox"]:checked + label::before {
 	margin-left: 17%;
 }
 
-.form input[type="submit"] {
+.form-submit span{
 	color: #edeef0;
 	font-size: 1vw;
 	background: none;
 	border: 5px solid #047a6b;
 	padding: 2% 5%;
 	cursor: pointer;
+	display: inline-block;
 }
 
-.form input[type="submit"]:hover {
+.form-submit span:hover {
 	background: #047a6b;
 }
 
@@ -523,12 +524,40 @@ input[type="checkbox"]:checked + label::before {
 	font-family: Candara;
 	color: #fff;
 	text-align: center;
-	padding-top: 14%;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .sec-2-center {
-	padding: 0 12%;
+	padding: 2% 2%;
+	border: 0.6vw solid rgba(4, 122, 107, .9);
+	width: 80%;
+	margin: 0 auto;
+	position: relative;
+}
+
+.sec-2-center:before {
+	content: " ";
+	display: block;
+	position: absolute;
+	top: -9%;
+	left: -5%;
+	width: 10%;
+	height: 15%;
+	background: rgba(4, 122, 107, 1);
+}
+
+.sec-2-center:after {
+	content: " ";
+	display: block;
+	position: absolute;
+	bottom: -9%;
+	right: -5%;
+	width: 10%;
+	height: 15%;
+	background: rgba(4, 122, 107, 1);
 }
 
 .sec-2 h2 {
@@ -572,6 +601,10 @@ input[type="checkbox"]:checked + label::before {
 	color: #edeef0;
 	padding: 5% 2%;
 	display: none;
+}
+
+.price .services-txt{
+	text-align: left;
 }
 
 .price h3 {
@@ -970,6 +1003,7 @@ input[type="checkbox"]:checked + label::before {
 	transition: height 1s, opacity 0.5s, margin-top 1s;
 	vertical-align: top;
 	display: none;
+	height: 26vh;
 }
 
 .slider .slider-active-img {
@@ -999,6 +1033,7 @@ input[type="checkbox"]:checked + label::before {
 	border-top: 0.3vw solid #000005;
 	margin-top: 2%;
 	display: none;
+	white-space: normal;
 }
 
 .slider-description h3 {
