@@ -585,6 +585,7 @@ body {
 	background:  rgba(0, 0, 0, 0.7);
 	z-index: 777;
 	display: none;
+	padding: 10px;
 }
 
 .wrapper-popap {
@@ -739,4 +740,444 @@ body {
 	background: #199c68;
 	border: none;
 	color: #fff;
+}
+
+/* success */
+.success-body {
+	padding-top: 0;
+}
+
+.success-header {
+	background: url(../images/suc-bg.png) no-repeat top center;
+	text-align: center;
+	padding: 4.355% 0;
+}
+
+.success-header h1 {
+	font-family: pfRegular, sans-serif;
+	font-size: 5em;
+	color: #fff;
+}
+
+.success-content h2 {
+	font-family: pfRegular, sans-serif;
+	font-size: 4.5em;
+	color: #3a3e47;
+	text-align: center;
+}
+
+.success-content h3 {
+	font-family: pfRegular, sans-serif;
+	font-size: 3em;
+	color: #3a3e47;
+	text-align: center;
+}
+
+.success-content {
+	padding: 4% 10px 0 10px;
+}
+
+.wrapper-form-s {
+	border-radius: 5px;
+	box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	max-width: 770px;
+	margin: 3% auto;
+	padding: 2% 4.6%;
+	box-sizing: border-box;
+}
+
+.wrapper-form-s h4 {
+	font-family: pfRegular, sans-serif;
+	font-size: 2em;
+	color: #324a7d;
+	margin-bottom: 10px;
+}
+
+.success-form {
+	display: flex;
+	justify-content: space-between;
+}
+
+.success-tel {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.5em;
+	color: #999999;
+	border: 1px solid #e8edef;
+	border-radius: 5px;
+	box-sizing: border-box;
+	padding: 2.2% 2%;
+	width: 60%;
+}
+
+.success-submit {
+	padding: .7em 1.5em;
+	cursor: pointer;
+	font-size: 1.5em;
+}
+
+.time {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+}
+
+.time span {
+	background: #3a3e47;
+	color: #fff;
+	font-family: pfRegular, sans-serif;
+	font-size: 5em;
+	border-radius: 5px;
+	padding: 30px;
+	display: inline-block;
+}
+
+.time .colon {
+	background: none;
+	color: #3a3e47;
+	padding: 0;
+	line-height: 140px;
+
+}
+
+.time p {
+	text-align: center;
+	margin-top: 10px;
+}
+
+.sucs-2 {
+	text-align: center;
+	margin-top: 2%;
+}
+
+.sucs-2 .btn_primary {
+	font-size: 2em;
+}
+/* end success */
+
+.oppen-popup,
+.work-block-a .oppen-popup-p,
+.succ-money-bloks .oppen-popup-p{
+  background-color: #e3970c;
+  border-bottom: 3px solid #dc551b;
+}
+.oppen-popup:hover,
+.oppen-popup:active,
+.oppen-popup:focus,
+.work-block-a .oppen-popup-p:hover,
+.succ-money-bloks .oppen-popup-p:hover {
+  background-color: #ffa809;
+  border-bottom: 3px solid #dc551b;
+}
+.form .btn_primary {
+  background-color: #e3970c;
+  border-bottom: 3px solid #dc551b;
+  margin-top: 0;
+}
+.form .btn_primary:hover,
+.form .btn_primary:active,
+.form .btn_primary:focus {
+  background-color: #ffa809;
+  border-bottom: 3px solid #dc551b;
+}
+.form .arrow {
+  max-width: 3.8em;
+}
+.form .arrow img{
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+.form tr.top td{
+  vertical-align: middle;
+}
+
+.success-2-content {
+	color: #3a3e47;
+}
+
+.success-2-content h4 {
+	font: 3em pfRegular, sans-serif;
+	text-align: center;
+	margin-top: 85px;
+}
+
+.success-2-content h3,
+.succ-money h3,
+.work-block h3 {
+	font: 4.5em pfRegular, sans-serif;
+	text-align: center;
+	margin-top: 60px;
+	color: #3a3e47;
+}
+
+.success-2-content-txt {
+	max-width: 1280px;
+	margin: 65px auto;
+	overflow: hidden;
+}
+
+.success-2-content-txt div {
+	width: 50%;
+	float: left;
+	font: 1.875em 'PT Sans', sans-serif;
+	box-sizing: border-box;
+}
+
+.success-2-content-txt div:first-child {
+	padding-right: 38px;
+}
+
+.success-2-content-txt div:last-child {
+	padding-left: 38px;
+}
+
+.success-2-content-txt p {
+	margin-bottom: 50px;
+}
+
+.success-2-content-left-last {
+	font-weight: bold;
+}
+
+.success-2-content-right h5 {
+	font: 1.5em pfMedium;
+	margin-bottom: 50px;
+}
+
+.succ-money {
+	background: #f1f1f2;
+	padding: 1px 10px 90px 10px;
+}
+
+.succ-money h6 {
+	text-align: center;
+	font: 1.5em 'PT Sans', sans-serif;
+	color: #3a3e47;
+	margin-top: 65px;
+}
+
+.succ-money-bloks {
+	max-width: 1280px;
+	display: flex;
+	justify-content: space-between;
+	margin: 50px auto;
+}
+
+.succ-money-bloks>div {
+	max-width: 390px;
+	text-align: center;
+	background: #fff;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	border-radius: 20px;
+	box-sizing: border-box;
+}
+
+.succ-money-bloks-size {
+	text-align: center;
+	margin-top: 85px;
+}
+
+.succ-money-bloks-size p{
+	margin-bottom: 20px;
+}
+
+.succ-money-bloks-size h6,
+.succ-money-bloks-size .size-n {
+	color: #3a3e47;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 1.250em;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+
+.succ-money-bloks-txt {
+	text-align: center;
+	font: 1.250em 'PT Sans', sans-serif;
+	color: #3a3e47;
+	padding: 0 30px;
+	transition: 1s;
+}
+
+.succ-money-bloks-txt p {
+	margin-bottom: 20px;
+}
+
+/* ... */
+.succ-money-bloks-txt {
+  /* спрятать текст если у более N строк */
+  overflow: hidden;
+  /* для установки '…' в абсолютную позицию */
+  position: relative;
+  /* используйте это значение для расчёта высоты блока */
+  line-height: 1.2em;
+  /* max-height = line-height (1.2) * число строк (3) */
+  max-height: 9.4em;
+}
+
+/* создаём многоточие … */
+.succ-money-bloks-txt-t {
+  position: absolute;
+  /* установить позицию в правый нижний угол блока */
+  right: 30px;
+  bottom: 0;
+  display: block;
+}
+/* end ... */
+
+.block-header h4{
+	color: #fff;
+	font: 3em pfRegular;
+}
+
+.block-header {
+	padding: 37px 0;
+}
+
+.succ-money-bloks .block-1 .block-header{
+	background: url(../images/suc-b-1.png) no-repeat top;
+}
+
+.succ-money-bloks .block-2 .block-header{
+	background: url(../images/suc-b-2.png) no-repeat top;
+}
+
+.succ-money-bloks .block-3 .block-header{
+	background: url(../images/suc-b-3.png) no-repeat top;
+}
+
+.size-an {
+	font: 1.9em pfRegular;
+	color: #cb4f59;
+	text-decoration: line-through;
+}
+
+.size-n-s {
+	font: 2.5em pfRegular;
+	color: #324a7d;
+}
+
+.open-all-txt {
+	font: 1.125em 'PT Sans', sans-serif;
+	color: #cb4f59;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.succ-money-bloks .wrapper-btn {
+	float: none;
+	margin: 60px 0 60px 0;
+	text-align: center;
+}
+
+.succ-money-bloks .btn_primary {
+	padding: .9em 1.5em;
+}
+
+.succ-money-hide-txt {
+	color: #3a3e47;
+	font: 1.125em 'PT Sans', sans-serif;
+	font-weight: bold;
+	text-align: center;
+	display: none;
+	padding: 0 30px;
+}
+
+.work-block {
+	padding-bottom: 60px;
+}
+
+.work-block-list {
+	color: #324a7d;
+	max-width: 1005px;
+	margin: 60px auto;
+	position: relative;
+}
+
+.work-block-list:after {
+	content: ' ';
+	display: block;
+	width: 2px;
+	height: 80%;
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	margin: auto;
+	background: #549fbf;
+	z-index: -1;
+}
+
+.work-block-list li {
+	overflow: hidden;
+}
+
+.work-block-list li:first-child {
+	background: url(../images/work-1.png) no-repeat top center;
+}
+
+.work-block-list li:nth-child(2) {
+	background: url(../images/work-2.png) no-repeat top center;
+}
+
+.work-block-list li:nth-child(3) {
+	background: url(../images/work-3.png) no-repeat top center;
+}
+
+.work-block-list li:nth-child(4) {
+	background: url(../images/work-4.png) no-repeat top center;
+}
+
+.work-block-list li:nth-child(5) {
+	background: url(../images/work-5.png) no-repeat top center;
+}
+
+.work-block-list-i {
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.work-block-list li:nth-child(odd) .work-block-list-i {
+	padding-right: 90px;
+	text-align: right;
+}
+
+.work-block-list li:nth-child(even) .work-block-list-i{
+	padding-left: 90px;
+	float: right;
+}
+
+.work-block-list h5{
+	font: 2.625em pfRegular;
+	margin-bottom: 40px;
+}
+
+.work-block-list p{
+	font: 1.250em 'PT Sans', sans-serif;
+}
+
+.work-block-op {
+	cursor: pointer;
+	color: #cb4f59;
+	text-decoration: underline;
+}
+
+.work-block-list-h {
+	text-decoration: underline;
+}
+
+.work-block-list-h span {
+	color: #cb4f59;
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.work-block .wrapper-btn {
+	float: none;
+	text-align: center;
+	padding: 20px;
+}
+
+.work-block .wrapper-btn .btn_primary {
+	padding: 1em 3.5em;
 }

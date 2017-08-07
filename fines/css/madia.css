@@ -1,3 +1,9 @@
+@media (max-width: 1600px) {
+	.success-body {
+		font-size: 90%;
+	}
+}
+
 @media (max-width: 1500px) {
 	.form td:first-child {
 		font-size: 1em;
@@ -10,6 +16,44 @@
 
 	.form .btn_primary {
 		font-size: .8em;
+	}
+
+	.success-body {
+		font-size: 87%;
+	}
+
+	.success-content {
+		padding: 2% 10px 0 10px;
+	}
+}
+
+@media (max-width: 1366px) {
+	.success-body {
+		font-size: 65%;
+	}
+	.wrapper-form-s {
+		width: 550px;
+	}
+
+	.time span {
+		padding: 20px;
+	}
+
+	.time .colon {
+		line-height: 90px;
+	}
+
+	.wrapper-form-s {
+		margin: 2% auto;
+	}
+}
+
+@media (max-width: 1280px) {
+	.success-body {
+		font-size: 62%;
+	}
+	.wrapper-form-s {
+		width: 500px;
 	}
 }
 
@@ -175,6 +219,45 @@
 	.wrapper-website-d {
 		padding: 3.4% 5.8% 0.4% 7.2%;
 	}
+
+	.success-2-content-txt div {
+		width: 100%;
+	}
+
+	.success-2-content-txt div:first-child,
+	.success-2-content-txt div:last-child {
+		padding: 10px;
+	}
+
+	.succ-money-bloks {
+		display: block;
+		padding: 0 20px;
+	}
+
+	.succ-money-bloks>div {
+		margin: 20px auto;
+		padding-bottom: 1px;
+	}
+
+	.succ-money-bloks-txt {
+		max-height: 8.4em;
+	}
+
+	.work-block-list li:nth-child(odd) .work-block-list-i {
+		padding-right: 40px;
+	}
+
+	.work-block-list li:nth-child(even) .work-block-list-i {
+		padding-left: 40px;
+	}
+
+	.work-block-list h5 {
+		margin-bottom: 20px;
+	}
+
+	.popup-p {
+		font-size: 1.7em;
+	}
 }
 
 @media (max-width: 575px) {
@@ -207,6 +290,22 @@
 	.btn-wrapper .btn_primary {
 		padding: 1em 0.3em;
 	}
+
+	.success-body {
+		font-size: 55%;
+	}
+
+	.wrapper-form-s {
+		width: 100%;
+	}
+
+	.time span {
+		padding: 15px;
+	}
+
+	.time .colon {
+		line-height: 60px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -220,5 +319,9 @@
 
 	.header {
 		font-size: 75%;
+	}
+
+	.succ-money-bloks-txt {
+		max-height: 10em;
 	}
 }

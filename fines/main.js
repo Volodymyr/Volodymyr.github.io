@@ -21,7 +21,6 @@ $(document).ready(function(){
 
 	$(".oppen-popup-p").click(function() {
 		$(".popup-p").show("slow");
-		return false;
 	});
 
 	$(".popup-cross").click(function() {
@@ -107,7 +106,7 @@ $(document).ready(function(){
 		var form_data = $(this).serialize();
 		$.ajax({
 			type: "POST",
-			url: "res-4.php",
+			url: "res-2.php",
 			data: form_data,
 			error: function (request, error) {
 				
@@ -155,23 +154,4 @@ $(document).ready(function(){
 			chageTime();
 		}, 1000);
 	}
-
-	//success-toggle block
-	$(".open-all-txt").click(function (){
-		$(this).toggleClass('active-txt');
-		var per = $(this).parent().parent();
-		if($(this).hasClass("active-txt")) {
-			$(this).text('Свернуть');
-			per.children(".succ-money-hide-txt").show('slow');
-			per.find(".succ-money-bloks-txt-t").hide('slow');
-			per.children(".succ-money-bloks-txt").css('max-height','100%');
-		}else {
-			$(this).text('Посмотреть весь пакет');
-			per.children(".succ-money-hide-txt").hide('slow');
-			per.find(".succ-money-bloks-txt-t").show('slow');
-			per.children(".succ-money-bloks-txt").css('max-height','9.4em');
-		}
-	});
-
-	$("#phone").mask("+7(999) 999-9999");
 });

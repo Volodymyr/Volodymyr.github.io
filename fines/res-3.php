@@ -1,6 +1,6 @@
 <?
-	$to = 'hello@silverduck.net';
-	$subject = 'Скачать чек лист бесплатно';
+	$to = 'shtraf@silverduck.net';
+	$subject = 'Поступила заявка скачать чек лист по штрафам роскомнадзора.';
 	$message = '
 		<html>
 			<head>
@@ -11,6 +11,6 @@
 			</body>
 		</html>';
 	$headers  = "Content-type: text/html; charset=utf-8 \r\n";
-	$headers .= "From: Отправитель <hello@silverduck.net>\r\n";
+	$headers .= "From: Отправитель <shtraf@silverduck.net>\r\n";
 	mail($to, $subject, $message, $headers);
 ?>
