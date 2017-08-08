@@ -750,7 +750,7 @@ body {
 .success-header {
 	background: url(../images/suc-bg.png) no-repeat top center;
 	text-align: center;
-	padding: 4.355% 0;
+	padding: 6.4% 0;
 }
 
 .success-header h1 {
@@ -912,7 +912,7 @@ body {
 }
 
 .success-2-content-txt {
-	max-width: 1280px;
+	max-width: 1298px;
 	margin: 65px auto;
 	overflow: hidden;
 }
@@ -971,6 +971,7 @@ body {
 	box-shadow: 0 0 5px rgba(0,0,0,0.5);
 	border-radius: 20px;
 	box-sizing: border-box;
+	height: 100%;
 }
 
 .succ-money-bloks-size {
