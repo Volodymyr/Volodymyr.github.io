@@ -854,15 +854,15 @@ body {
 }
 /* end success */
 
-.oppen-popup,
+.oppen-popup:not(.website-blue-txt),
 .work-block-a .oppen-popup-p,
 .succ-money-bloks .oppen-popup-p{
   background-color: #e3970c;
   border-bottom: 3px solid #dc551b;
 }
-.oppen-popup:hover,
-.oppen-popup:active,
-.oppen-popup:focus,
+.oppen-popup:not(.website-blue-txt):hover,
+.oppen-popup:not(.website-blue-txt):active,
+.oppen-popup:not(.website-blue-txt):focus,
 .work-block-a .oppen-popup-p:hover,
 .succ-money-bloks .oppen-popup-p:hover {
   background-color: #ffa809;
