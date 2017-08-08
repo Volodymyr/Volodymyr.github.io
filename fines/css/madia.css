@@ -46,6 +46,10 @@
 	.wrapper-form-s {
 		margin: 2% auto;
 	}
+
+	.success-2 {
+		font-size: 90%;
+	}
 }
 
 @media (max-width: 1280px) {
@@ -54,6 +58,10 @@
 	}
 	.wrapper-form-s {
 		width: 500px;
+	}
+
+	.success-2 {
+		font-size: 85%;
 	}
 }
 
