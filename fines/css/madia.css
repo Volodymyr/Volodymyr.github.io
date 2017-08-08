@@ -50,6 +50,18 @@
 	.success-2 {
 		font-size: 90%;
 	}
+
+	.success-2-content-txt div {
+		font: 1.675em 'PT Sans', sans-serif;
+	}
+
+	.success-2-content-txt {
+		padding: 0 20px;
+	}
+
+	.work-block-list {
+		margin: 60px auto 120px auto;
+	}
 }
 
 @media (max-width: 1280px) {
