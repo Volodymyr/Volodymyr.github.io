@@ -912,9 +912,10 @@ body {
 }
 
 .success-2-content-txt {
-	max-width: 1298px;
+	max-width: 1328px;
 	margin: 65px auto;
 	overflow: hidden;
+	padding: 0 15px;
 }
 
 .success-2-content-txt div {
@@ -1091,7 +1092,7 @@ body {
 .work-block-list {
 	color: #324a7d;
 	max-width: 1005px;
-	margin: 60px auto;
+	margin: 120px auto;
 	position: relative;
 }
 
@@ -1110,7 +1111,7 @@ body {
 }
 
 .work-block-list li {
-	overflow: hidden;
+	height: 160px;
 }
 
 .work-block-list li:first-child {
@@ -1181,4 +1182,8 @@ body {
 
 .work-block .wrapper-btn .btn_primary {
 	padding: 1em 3.5em;
+}
+
+.success-2 {
+	padding: 0;
 }

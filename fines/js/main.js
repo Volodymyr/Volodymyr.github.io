@@ -162,14 +162,14 @@ $(document).ready(function(){
 		var per = $(this).parent().parent();
 		if($(this).hasClass("active-txt")) {
 			$(this).text('Свернуть');
+			per.children(".succ-money-bloks-txt").css('max-height','100%');
 			per.children(".succ-money-hide-txt").show('slow');
 			per.find(".succ-money-bloks-txt-t").hide('slow');
-			per.children(".succ-money-bloks-txt").css('max-height','100%');
 		}else {
 			$(this).text('Посмотреть весь пакет');
+			per.children(".succ-money-bloks-txt").css('max-height','9.4em');
 			per.children(".succ-money-hide-txt").hide('slow');
 			per.find(".succ-money-bloks-txt-t").show('slow');
-			per.children(".succ-money-bloks-txt").css('max-height','9.4em');
 		}
 	});
 

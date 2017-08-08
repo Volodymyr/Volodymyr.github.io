@@ -57,6 +57,17 @@
 	}
 }
 
+@media (max-width: 1230px) {
+	.succ-money-bloks {
+		font-size: 90%;
+		justify-content: space-around;
+	}
+
+	.succ-money-bloks>div {
+		max-width: 320px;
+	}
+}
+
 @media (max-width: 1040px) {
 	.warning {
 		font-size: 90%;
@@ -74,6 +85,19 @@
 	.wrapper-warning-icon img {
 		width: 85%;
 	}
+
+	.succ-money-bloks {
+		display: block;
+	}
+
+	.succ-money-bloks>div {
+		margin: 10px auto;
+	}
+
+	.succ-money-bloks-txt {
+		max-height: 8.4em;
+	}
+
 }
 
 @media (max-width: 1000px) {
@@ -240,7 +264,7 @@
 	}
 
 	.succ-money-bloks-txt {
-		max-height: 8.4em;
+		max-height: 8em;
 	}
 
 	.work-block-list li:nth-child(odd) .work-block-list-i {
@@ -257,6 +281,10 @@
 
 	.popup-p {
 		font-size: 1.7em;
+	}
+
+	.work-block-list {
+		font-size: 75%;
 	}
 }
 
@@ -322,6 +350,33 @@
 	}
 
 	.succ-money-bloks-txt {
-		max-height: 10em;
+		max-height: 8.3em;
 	}
+
+	.success-2 {
+		font-size: 70%;
+	}
+
+	.work-block-list li:first-child,
+	.work-block-list li:nth-child(2),
+	.work-block-list li:nth-child(3),
+	.work-block-list li:nth-child(4),
+	.work-block-list li:nth-child(5) {
+		background-size: 9%;
+	}
+
+	.work-block-list li {
+		height: 100px;
+	}
+
+	.success-2 .popup-footer-right {
+		width: 50%;
+	}
+}
+
+@media (max-width: 340px) {
+	.work-block-list {
+		font-size: 65%;
+	}
+
 }
